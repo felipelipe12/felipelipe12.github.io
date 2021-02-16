@@ -3,12 +3,12 @@ Landing Page
 
 # Missions:
 
-[] Header
-[] Hero Section
-[] Skills Section
-[] Footer
+- [] Header
+- [] Hero Section
+- [] Skills Section
+- [] Footer
 
 ## Sub-mission:
 
-[] Responsive
-[] Effects and Animations
+- [] Responsive
+- [] Effects and Animations

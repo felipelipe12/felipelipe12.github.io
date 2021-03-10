@@ -4,7 +4,7 @@ Landing Page
 # Missions:
 
 - [X] Header
-- [ ] Hero Section
+- [X] Hero Section
 - [ ] Skills Section
 - [ ] Footer
 

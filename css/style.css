@@ -1,10 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-/* --- Carousel Section --- */
-.carousel-item {
-    height: 70vh;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.undefined {
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #FFFFFF);
 }

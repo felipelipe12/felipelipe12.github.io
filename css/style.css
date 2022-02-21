@@ -1,10 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.undefined {
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+   
+::-webkit-scrollbar-track {
+    background: #4169E1;
+}
+   
+::-webkit-scrollbar-thumb {
+    background:#FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #4169E1;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body, button {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 4.8em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3.2em;
+}
+
+h4 {
+    font-size: 2.4em;
+}
+
+h5 {
+    font-size: 1.6em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+section {
+    padding: 3em 0;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.8em 1.6em;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section - Hero */
+.section-hero {
     height: 100vh;
-    background: linear-gradient(135deg, #000000, #FFFFFF);
+    background: #4169E1;
+    display: flex;
+    align-items: center;
+}
+
+.widget-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-text {
+    width: 60%;
+}
+
+.hero-text h1 span {
+    color: #FFFFFF;
+}
+
+.hero-titles {
+    margin-bottom: 3em;
+}
+
+.hero-text button {
+    background-color: #4169E1;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.hero-image {
+    width: 40%;
+}
+
+.hero-image img {
+    width: 300px;
+}
+
+/* Section - About */
+section.section-about {
+    
+}
+
+img {
+    clip-path: polygon(0% 0% 10% 0%);
 }

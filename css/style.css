@@ -114,9 +114,27 @@ button {
 
 /* Section - About */
 section.section-about {
-    
+    display: flex;
 }
 
 img {
     clip-path: polygon(0% 0% 10% 0%);
+}
+
+/* Section - Techs */
+.section-techs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techs-badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.techs-card {
+    border: 1px solid #000000;
+    width: 40%;
 }

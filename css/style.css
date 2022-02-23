@@ -28,6 +28,17 @@ html {
 
 body, button {
     font-family: 'Ubuntu', sans-serif;
+    background: #4169E1;
+}
+
+section {
+    padding: 3em 0;
+}
+
+footer {
+    padding: 1em 0;
+    border-top: 1px solid #7295ff;
+    color: #FFFFFF;
 }
 
 h1 {
@@ -54,12 +65,8 @@ h6 {
     font-size: 1em;
 }
 
-section {
-    padding: 3em 0;
-}
-
-footer {
-    padding: 1em 0;
+a {
+    color: #FFFFFF;
 }
 
 button {
@@ -79,7 +86,6 @@ button {
 /* Section - Hero */
 .section-hero {
     height: 100vh;
-    background: #4169E1;
     display: flex;
     align-items: center;
 }
@@ -139,7 +145,7 @@ img {
 }
 
 .techs-card {
-    border: 1px solid #000000;
+    border: 1px solid #FFFFFF;
     width: 30%;
     border-radius: 5px;
     display: flex;
@@ -147,6 +153,7 @@ img {
     align-items: center;
     padding: 15px 0;
 }
+
 
 /* Footer */
 .widget-footer {
@@ -157,10 +164,20 @@ img {
 
 .footer-copyright {
     width: 80%;
+    display: flex;
+    align-items: center;
 }
 
 .footer-socials {
     width: 20%;
-    display: flex;
-    justify-content: space-evenly;
+    display: contents;
+}
+
+.footer-socials i {
+    font-size: 20px;
+    transition: all .2s ease-in-out;;
+}
+
+.footer-socials i:hover {
+    transform: scale(1.4);
 }

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+   
+::-webkit-scrollbar-track {
+    background: #4169E1;
+}
+   
+::-webkit-scrollbar-thumb {
+    background:#FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #4169E1;
+}
+
+/*  */
+
+section.section-hero {
+    background-color: #2E2A76;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+section.section-hero .component-text .title {
+    display: flex;
+    flex-direction: column;
+}

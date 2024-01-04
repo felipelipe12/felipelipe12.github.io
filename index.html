@@ -1,47 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Felipe Almeida</title>
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
 <body>
-    <section class="section-hero">
-        <div class="wrapper">
+    <header>
+        <nav>
+          <a href="#hero">
+            <i class="fa-solid fa-house-chimney"></i>
+          </a>
+          <a href="#about">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="#skills">
+            <i class="fa-solid fa-book"></i>
+          </a>
+          <a href="#experience">
+            <i class="fa-solid fa-briefcase"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-address-card"></i>
+          </a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="section_hero">
             <div class="container">
                 <div class="column">
-                    <div class="component-text">
-                        <div class="title">
-                            <span>Olá, sou o</span>
-                            <span>Felipe Almeida</span>
-                        </div>
-                        <div class="subtitle">
-                            <span>Web Design, Front-End and UI/UX Designer</span>
-                        </div>
-                        <div class="button">
-                            <button>Entre em contato</button>
-                        </div>
-                        <div class="social">
-fsfds
-                        </div>
+                    <div class="component_text">
+                        <h4>Olá, sou o</h4>
+                        <h1>Felipe Almeida</h1>
+                        <h3>Web Developer | Front-End</h3>
+                    </div>
+                    <div class="component_buttons">
+                        <a href="#">Explorar</a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="component-image">
-                        <img src="" alt="">
+                        <img src="image.png" alt="">
+                        <span>Image</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="about" class="section_about">
+          <div class="container">
+            <div class="component_title">
+              <h2>About</h2>
+            </div>
+            <div class="component_profile">
+              <div class="column">
+                <div class="element_info">
+                  Infos
+                </div>
+              </div>
+              <div class="column">
+                <div class="element_data">
+                  <div class="sub-element_data">
+                    <div class="title">+7</div>
+                    <div class="subtitle">Anos de experiência</div>
+                  </div>
+                  <div class="sub-element_data">
+                    <div class="title">+50</div>
+                    <div class="subtitle">Projetos finalizados</div>
+                  </div>
+                  <div class="sub-element_data">
+                    <div class="title">+14</div>
+                    <div class="subtitle">Clientes</div>
+                  </div>
+                  <div class="sub-element_data">
+                    <div class="title">+20</div>
+                    <div class="subtitle">Tecnologias</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="component_title">
+              <h2>Skills</h2>
+            </div>
+          </div>
+        </section>
+    </main>
     <footer>
-
+        <div class="container">
+            <span>© <span id="year"></span> Felipe Almeida.</span>
+        </div>
     </footer>
 </body>
-
-</html>

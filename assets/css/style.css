@@ -37,16 +37,11 @@ section:nth-child(even) {
   background-color: var(--dark-midnight-blue);
 }
 
-h1 {
-  font-size: 68px;
-}
-
 h2 {
+  color: var(--white);
+  font-weight: 800;
   font-size: 44px;
-}
-
-h3 {
-  font-size: 32px;
+  text-align: center;
 }
 
 .container {
@@ -66,7 +61,7 @@ header {
 header nav {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 header nav a {
@@ -156,13 +151,6 @@ section.section_about .container {
   gap: 50px;
 }
 
-section.section_about .container .component_title h2 {
-  text-align: center;
-  color: var(--white);
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
 section.section_about .container .component_profile {
   display: flex;
   flex-direction: column;
@@ -234,13 +222,6 @@ section.section_skills .container {
   gap: 50px;
 }
 
-section.section_skills .container .component_title h2 {
-  text-align: center;
-  color: var(--white);
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
 section.section_skills .container .component_abilities .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -254,12 +235,7 @@ section.section_skills .container .component_abilities .row .theme_card {
   gap: 10px;
 }
 
-section.section_skills .container .component_abilities .row .theme_card .theme_title {
-  color: var(--white);
-  text-align: center;
-}
-
-section.section_skills .container .component_abilities .row .theme_card .theme_cards {
+section.section_skills .container .component_abilities .row .theme_card .theme_techs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -325,12 +301,10 @@ section.section_portfolio .container {
   gap: 50px;
 }
 
-section.section_portfolio .container .component_title h2 {
-  text-align: center;
-  color: var(--white);
-  font-weight: 800;
-  text-transform: uppercase;
-}
+
+
+
+
 
 
 /* Section - Contact */
@@ -340,13 +314,47 @@ section.section_contact .container {
   gap: 50px;
 }
 
-section.section_contact .container .component_title h2 {
-  text-align: center;
-  color: var(--white);
-  font-weight: 800;
-  text-transform: uppercase;
+section.section_contact .container .component_contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
+section.section_contact .container .component_contacts span {
+  color: var(--golden-poppy);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+section.section_contact .container .component_contacts p {
+  color: var(--white);
+  margin: 14px;
+}
+
+section.section_contact .container .component_contacts .socials {
+  display: flex;
+  gap: 25px;
+}
+
+section.section_contact .container .component_contacts .socials a {
+  background-color: var(--maastricht-blue);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1.6em;
+  text-decoration: none;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+
+section.section_contact .container .component_contacts .socials a:hover {
+  background-color: var(--golden-poppy);
+  color: var(--maastricht-blue);
+}
 
 /* Footer */
 footer {

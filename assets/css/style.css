@@ -86,45 +86,45 @@ header nav a:hover {
 }
 
 /* Section - Hero */
-section.section_hero {
+section.section_home {
   height: 100dvh;
 }
 
-section.section_hero .container {
+section.section_home .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 50px;
 }
 
-section.section_hero .container .row .component_text {
+section.section_home .container .row .component_text {
   display: flex;
   flex-direction: column;
 }
 
-section.section_hero .container .row .component_text span:nth-child(1) {
+section.section_home .container .row .component_text span:nth-child(1) {
   color: var(--white);
   font-size: 2.4em;
   font-weight: 600;
 }
 
-section.section_hero .container .row .component_text span:nth-child(2) {
+section.section_home .container .row .component_text span:nth-child(2) {
   color: var(--white);
   font-size: 4.2em;
   font-weight: 700;
 }
 
-section.section_hero .container .row .component_text span:nth-child(3) {
+section.section_home .container .row .component_text span:nth-child(3) {
   color: var(--golden-poppy);
   font-size: 2em;
   font-weight: 600;
 }
 
-section.section_hero .container .row .component_buttons {
+section.section_home .container .row .component_buttons {
   padding-top: 50px;
 }
 
-section.section_hero .container .row .component_buttons a {
+section.section_home .container .row .component_buttons a {
   background-color: var(--rich-black);
   border: 3px solid transparent;
   border-radius: 5px;
@@ -138,7 +138,7 @@ section.section_hero .container .row .component_buttons a {
   text-decoration: none;
 }
 
-section.section_hero .container .row .component_buttons a:hover {
+section.section_home .container .row .component_buttons a:hover {
   box-shadow: 0px 0px 20px var(--rich-black);
   background-color: var(--golden-poppy);
   color: var(--maastricht-blue);

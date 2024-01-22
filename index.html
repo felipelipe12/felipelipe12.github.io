@@ -29,28 +29,25 @@
             <a href="#experience">
                 <i class="fa-solid fa-briefcase"></i>
             </a>
-            <a href="#">
-                <i class="fa-solid fa-address-card"></i>
+            <a href="#portfolio">
+                <i class="fa-solid fa-display"></i>
+            </a>
+            <a href="#contacts">
+                <i class="fa-solid fa-paper-plane"></i>
             </a>
         </nav>
     </header>
     <main>
         <section id="hero" class="section_hero">
             <div class="container">
-                <div class="column">
+                <div class="row">
                     <div class="component_text">
-                        <h4>Olá, sou o</h4>
-                        <h1>Felipe Almeida</h1>
-                        <h3>Web Developer | Front-End</h3>
+                        <span>Olá, sou o</span>
+                        <span>Felipe Almeida</span>
+                        <span>Web Developer | Front-End</span>
                     </div>
                     <div class="component_buttons">
                         <a href="#">Explorar</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="component-image">
-                        <img src="image.png" alt="">
-                        <span>Image</span>
                     </div>
                 </div>
             </div>
@@ -61,12 +58,23 @@
                     <h2>About</h2>
                 </div>
                 <div class="component_profile">
-                    <div class="column">
+                    <div class="row">
                         <div class="element_info">
-                            Infos
+                            <div class="column">
+                                Image
+                            </div>
+                            <div class="column">
+                                <p>Sou Web Developer, com ênfase em Front-End. Desenvolvo interfaces web modernas e
+                                    responsivas para diversos direcionamentos atendendo as expectativas e demandas das
+                                    empresas no meio online. Estou sempre preparado para atuar em equipe e compartilhar
+                                    conhecimento, visando atender metas e crescer coletivamente.</p>
+                                <p>Busco aprimorar minhas habilidades e conhecimentos, sempre me atualizando às
+                                    tendências no meio tecnológico. Possuo confiança que minha contribuição seja
+                                    significativa para o progresso e evolução de projetos e equipes.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="row">
                         <div class="element_data">
                             <div class="sub-element_data">
                                 <div class="title">+7</div>
@@ -77,7 +85,7 @@
                                 <div class="subtitle">Projetos finalizados</div>
                             </div>
                             <div class="sub-element_data">
-                                <div class="title">+14</div>
+                                <div class="title">+13</div>
                                 <div class="subtitle">Clientes</div>
                             </div>
                             <div class="sub-element_data">
@@ -89,17 +97,98 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="skills" class="section_skills">
             <div class="container">
                 <div class="component_title">
                     <h2>Skills</h2>
+                </div>
+                <div class="component_abilities">
+                    <div class="row">
+                        <div class="theme_card">
+                            <div class="theme_title">
+                                <h5>Tech</h5>
+                            </div>
+                            <div class="theme_cards">
+                                <div class="element_card">
+                                    <div class="head">
+                                        <div class="icon">
+                                            <i class="fa-brands fa-html5"></i>
+                                        </div>
+                                        <div class="title">
+                                            <h5>HTML</h5>
+                                            <span>Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <a href="#html">Modal</a>
+                                    </div>
+                                    <div id="html">
+                                        <a href="##">close</a>
+                                        papapapapapa
+                                    </div>
+                                </div>
+                                <div class="element_card">
+                                    <div class="head">
+                                        <div class="icon">
+                                            <i class="fa-brands fa-css3-alt"></i>
+                                        </div>
+                                        <div class="title">
+                                            <h5>CSS</h5>
+                                            <span>Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <a href="#modal">Modal</a>
+                                    </div>
+                                    <div id="modal">Modal</div>
+                                </div>
+                                <div class="element_card">
+                                    <div class="head">
+                                        <div class="icon">
+                                            <i class="fa-brands fa-js"></i>
+                                        </div>
+                                        <div class="title">
+                                            <h5>CSS</h5>
+                                            <span>Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <a href="#modal">Modal</a>
+                                    </div>
+                                    <div id="modal">Modal</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="section_experience"></section>
+        <section id="portfolio" class="section_portfolio">
+            <div class="container">
+                <div class="component_title">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section_contact">
+            <div class="container">
+                <div class="component_title">
+                    <h2>Contact</h2>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <span>© <span id="year"></span> Felipe Almeida.</span>
+            <div class="copyright">
+                <span>© <span id="year"></span> Felipe Almeida. Todos os direitos reservados.</span>
+            </div>
+            <div class="techs">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
         </div>
     </footer>
 </body>

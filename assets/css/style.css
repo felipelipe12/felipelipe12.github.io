@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/assets/fonts/OpenSans_Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url(/assets/fonts/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url(/assets/fonts/OpenSans-ExtraBold.ttf);
+  font-weight: 800;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,7 +58,7 @@ section:nth-child(even) {
 h2 {
   color: var(--white);
   font-weight: 800;
-  font-size: 44px;
+  font-size: 3.6em;
   text-align: center;
 }
 

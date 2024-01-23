@@ -5,10 +5,20 @@ Landing Page
 
 - [X] Header
 - [X] Hero Section
+- [ ] About Section
 - [ ] Skills Section
-- [ ] Footer
+- [ ] Experience Section
+- [X] Contacts Section
+- [X] Footer
 
-## Sub-mission:
+## Secondary missions:
 
 - [ ] Responsive
 - [ ] Effects and Animations
+
+## Tertiary missions:
+
+- [X] Perfomance
+- [ ] Accessbility
+- [X] Best practices
+- [X] SEO

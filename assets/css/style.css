@@ -1,18 +1,24 @@
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url(/assets/fonts/OpenSans_Regular.ttf);
+  font-family: 'Open Sans', sans-serif;
+  src: url(/assets/fonts/OpenSans_Regular.ttf) format('ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Open Sans', sans-serif;
-  src: url(/assets/fonts/OpenSans-SemiBold.ttf);
+  src: url(/assets/fonts/OpenSans-SemiBold.ttf) format('ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Open Sans', sans-serif;
-  src: url(/assets/fonts/OpenSans-ExtraBold.ttf);
+  src: url(/assets/fonts/OpenSans-Bold.ttf) format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url(/assets/fonts/OpenSans-ExtraBold.ttf) format('ttf');
   font-weight: 800;
 }
 
@@ -186,7 +192,8 @@ section.section_about .container .component_profile .row .element_info .column {
 
 section.section_about .container .component_profile .row .element_info .column p {
   color: var(--white);
-  margin: 14px;
+  line-height: 24px;
+  margin: 1em;
 }
 
 section.section_about .container .component_profile .row .element_data {
@@ -213,24 +220,24 @@ section.section_about .container .component_profile .row .element_data .sub-elem
   box-shadow: 0px 0px 20px var(--rich-black);
 }
 
+section.section_about .container .component_profile .row .element_data .sub-element_data .title {
+  color: var(--golden-poppy);
+  font-size: 3em;
+  font-weight: 800;
+}
+
+section.section_about .container .component_profile .row .element_data .sub-element_data .subtitle {
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 600;
+}
+
 section.section_about .container .component_profile .row .element_data .sub-element_data:hover > .title {
   color: var(--dark-midnight-blue);
 }
 
 section.section_about .container .component_profile .row .element_data .sub-element_data:hover > .subtitle {
   color: var(--maastricht-blue);
-}
-
-section.section_about .container .component_profile .row .element_data .sub-element_data .title {
-  color: var(--golden-poppy);
-  font-size: 48px;
-  font-weight: 800;
-}
-
-section.section_about .container .component_profile .row .element_data .sub-element_data .subtitle {
-  color: var(--white);
-  font-size: 16px;
-  font-weight: 800;
 }
 
 /* Section - Skills */
@@ -339,15 +346,16 @@ section.section_contact .container .component_contacts {
   gap: 20px;
 }
 
-section.section_contact .container .component_contacts span {
+section.section_contact .container .component_contacts span:nth-child(1) {
   color: var(--golden-poppy);
   font-size: 2em;
   font-weight: 600;
 }
 
-section.section_contact .container .component_contacts p {
+section.section_contact .container .component_contacts span:nth-child(2) {
   color: var(--white);
-  margin: 14px;
+  font-size: 1em;
+  line-height: 24px;
 }
 
 section.section_contact .container .component_contacts .socials {
@@ -377,12 +385,19 @@ section.section_contact .container .component_contacts .socials a:hover {
 /* Footer */
 footer {
   background-color: var(--maastricht-blue);
-  padding: 24px 0;
+  padding: 20px 0;
 }
 
 footer .container {
   display: flex;
   justify-content: space-between;
+}
+
+footer .container .copyright, 
+footer .container .techs {
+  display: flex;
+  align-items: center;
+  color: var(--white);
 }
 
 footer .container .copyright {
@@ -395,10 +410,7 @@ footer .container .techs {
   font-size: 1.4em;
 }
 
-footer .container .copyright, 
-footer .container .techs {
-  color: var(--white);
-}
+
 
 
 

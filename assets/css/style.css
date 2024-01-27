@@ -42,9 +42,6 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  /* -webkit-tap-highlight-color: transparent;
-	-webkit-user-select: none;
-	-ms-user-select: none; */
 	user-select: none;
 }
 
@@ -242,8 +239,6 @@ section.section_about .container .widget_about .component_data .element_card:hov
 section.section_about .container .widget_about .component_data .element_card:hover > span:nth-child(2) {
   color: var(--maastricht-blue);
 }
-
-/* ---------------------------------------------------- Verify ---------------------------------------------------- */
 
 /* Section - Skills */
 section.section_skills .container {
@@ -446,4 +441,3 @@ footer .container .widget_techs {
   gap: 25px;
   font-size: 1.4em;
 }
-

@@ -40,58 +40,54 @@
     <main>
         <section id="home" class="section_home">
             <div class="container">
-                <div class="row">
-                    <div class="component_text">
-                        <span>Olá, sou o</span>
-                        <span>Felipe Almeida</span>
-                        <span>Web Developer | Front-End</span>
-                    </div>
-                    <div class="component_buttons">
-                        <a href="#">Explorar</a>
-                    </div>
+                <div class="widget_multiple-titles">
+                    <span>Olá, sou o</span>                        
+                    <span>Felipe Almeida</span>
+                    <span>Web Developer | Front-End</span>
+                </div>
+                <div class="widget_multiple-buttons">
+                    <a href="#">Explorar</a>
+                    <a href="#">Currículo</a>
                 </div>
             </div>
         </section>
         <section id="about" class="section_about">
             <div class="container">
-                <div class="component_title">
-                    <h2>About</h2>
+                <div class="widget_title">
+                    <h1>About</h1>
                 </div>
-                <div class="component_profile">
-                    <div class="row">
-                        <div class="element_info">
-                            <div class="column">
-                                Image
-                            </div>
-                            <div class="column">
-                                <p>Sou Web Developer, com ênfase em Front-End. Desenvolvo interfaces web modernas e
-                                    responsivas para diversos direcionamentos atendendo as expectativas e demandas das
-                                    empresas no meio online. Estou sempre preparado para atuar em equipe e compartilhar
-                                    conhecimento, visando atender metas e crescer coletivamente.</p>
-                                <p>Busco aprimorar minhas habilidades e conhecimentos, sempre me atualizando às
-                                    tendências no meio tecnológico. Possuo confiança que minha contribuição seja
-                                    significativa para o progresso e evolução de projetos e equipes.</p>
-                            </div>
+                <div class="widget_about">
+                    <div class="component_profile">
+                        <div class="element_image">
+                            <img src="" alt="">
+                            <span>image</span>
+                        </div>
+                        <div class="element_text">
+                            <p>Sou Web Developer, com ênfase em Front-End. Desenvolvo interfaces web modernas e
+                            responsivas para diversos direcionamentos atendendo as expectativas e demandas das
+                            empresas no meio online. Estou sempre preparado para atuar em equipe e compartilhar
+                            conhecimento, visando atender metas e crescer coletivamente.</p>
+                            <p>Busco aprimorar minhas habilidades e conhecimentos, sempre me atualizando às
+                            tendências no meio tecnológico. Possuo confiança que minha contribuição seja
+                            significativa para o progresso e evolução de projetos e equipes.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="element_data">
-                            <div class="sub-element_data">
-                                <div class="title">+7</div>
-                                <div class="subtitle">Anos de experiência</div>
-                            </div>
-                            <div class="sub-element_data">
-                                <div class="title">+50</div>
-                                <div class="subtitle">Projetos finalizados</div>
-                            </div>
-                            <div class="sub-element_data">
-                                <div class="title">+13</div>
-                                <div class="subtitle">Clientes</div>
-                            </div>
-                            <div class="sub-element_data">
-                                <div class="title">+20</div>
-                                <div class="subtitle">Tecnologias</div>
-                            </div>
+                    <div class="component_data">
+                        <div class="element_card">
+                            <span>+7</span>
+                            <span>Anos de experiência</span>
+                        </div>
+                        <div class="element_card">
+                            <span>+50</span>
+                            <span>Projetos finalizados</span>
+                        </div>
+                        <div class="element_card">
+                            <span>+13</span>
+                            <span>Clientes</span>
+                        </div>
+                        <div class="element_card">
+                            <span>+20</span>
+                            <span>Tecnologias</span>
                         </div>
                     </div>
                 </div>
@@ -99,60 +95,211 @@
         </section>
         <section id="skills" class="section_skills">
             <div class="container">
-                <div class="component_title">
-                    <h2>Skills</h2>
+                <div class="widget_title">
+                    <h1>Skills</h1>
                 </div>
-                <div class="component_abilities">
-                    <div class="row">
-                        <div class="theme_card">
-                            <div class="theme_techs">
-                                <div class="element_card">
-                                    <div class="head">
-                                        <div class="icon">
-                                            <i class="fa-brands fa-html5"></i>
-                                        </div>
-                                        <div class="title">
-                                            <span>HTML</span>
-                                            <span>Advanced</span>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <a href="#html">Modal</a>
-                                    </div>
-                                    <div id="html">
-                                        <a href="##">close</a>
-                                        papapapapapa
-                                    </div>
+                <div class="widget_skills">
+                    <div class="component_navigation">
+                        <label for="grid_technologies">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Tecnologias</span>
+                        </label>
+                        <label for="grid_frameworks">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Frameworks</span>
+                        </label>
+                        <label for="grid_tools">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>Ferramentas</span>
+                        </label>
+                        <label for="grid_abilities">
+                            <i class="fa-solid fa-table"></i>
+                            <span>Habilidades</span>
+                        </label>
+                    </div>
+                    <div class="component_information">
+                        <div class="element_tabs">
+                            <input type="radio" id="grid_technologies" name="tabs" checked>
+                            <div class="cards">
+                                <div class="card">
+                                    <span>HTML</span>
+                                    <span>Avançado</span>
+                                    <ul>
+                                        <li>Meta Tags e SEO</li>
+                                        <li>Formulários</li>
+                                        <li>Componentização de elementos</li>
+                                        <li>Código dinâmico</li>
+                                    </ul>
                                 </div>
-                                <div class="element_card">
-                                    <div class="head">
-                                        <div class="icon">
-                                            <i class="fa-brands fa-css3-alt"></i>
-                                        </div>
-                                        <div class="title">
-                                            <span>CSS</span>
-                                            <span>Advanced</span>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <a href="#modal">Modal</a>
-                                    </div>
-                                    <div id="modal">Modal</div>
+                                <div class="card">
+                                    <span>CSS</span>
+                                    <span>Avançado</span>
+                                    <ul>
+                                        <li>Flexbox e Grid Layout</li>
+                                        <li>Responsividade</li>
+                                        <li>Animações</li>
+                                        <li>Variáveis</li>
+                                    </ul>
                                 </div>
-                                <div class="element_card">
-                                    <div class="head">
-                                        <div class="icon">
-                                            <i class="fa-brands fa-js"></i>
-                                        </div>
-                                        <div class="title">
-                                            <span>CSS</span>
-                                            <span>Advanced</span>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <a href="#modal">Modal</a>
-                                    </div>
-                                    <div id="modal">Modal</div>
+                                <div class="card">
+                                    <span>JavaScript</span>
+                                    <span>Básico</span>
+                                    <ul>
+                                        <li>Funções</li>
+                                        <li>Validações</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>SQL</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Modelo de dados (Relacional)</li>
+                                        <li>Syntaxe</li>
+                                        <li>Plataformas (MySQL, PostgreSQL, MongoDB)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element_tabs">
+                            <input type="radio" id="grid_frameworks" name="tabs">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>React.js</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Hooks</li>
+                                        <li>Componenentes</li>
+                                        <li>Responsividade</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Bootstrap 5</span>
+                                    <span>Intermediário</span>
+                                    <ul class="list">
+                                        <li>Flexbox e Grid Layout</li>
+                                        <li>Componentes</li>
+                                        <li>Responsividade</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Tailwind CSS</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Flexbox e Grid Layout</li>
+                                        <li>Componentes</li>
+                                        <li>Responsividade</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Chakra UI</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Flexbox e Grid Layout</li>
+                                        <li>Componentes</li>
+                                        <li>Responsividade</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Materialize CSS</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Flexbox e Grid Layout</li>
+                                        <li>Componentes</li>
+                                        <li>Responsividade</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element_tabs">
+                            <input type="radio" id="grid_tools" name="tabs">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>WordPress</span>
+                                    <span>Avançado</span>
+                                    <ul>
+                                        <li>Temas e Plugins</li>
+                                        <li>Manutenção</li>
+                                        <li>Backup e Performance</li>
+                                        <li>Page Builders</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Webflow</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Meta Tags e SEO</li>
+                                        <li>Componentização</li>
+                                        <li>Responsividade</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Shopify</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Temas e Plugins</li>
+                                        <li>Configurações de ambiente</li>
+                                        <li>Versionamento</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Figma</span>
+                                    <span>Intermediário</span>
+                                    <ul>
+                                        <li>Wireframes e Prototipação</li>
+                                        <li>Plugins</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>Node.js</span>
+                                    <span>Básico</span>
+                                    <ul>
+                                        <li>API Rest</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element_tabs">
+                            <input type="radio" id="grid_abilities" name="tabs">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>HTML</span>
+                                    <span>Avançado</span>
+                                    <ul>
+                                        <li>Meta Tags e SEO</li>
+                                        <li>Formulários</li>
+                                        <li>Componentização de elementos</li>
+                                        <li>Código dinâmico</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>HTML</span>
+                                    <span>Avançado</span>
+                                    <ul>
+                                        <li>Meta Tags e SEO</li>
+                                        <li>Formulários</li>
+                                        <li>Componentização de elementos</li>
+                                        <li>Código dinâmico</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>HTML</span>
+                                    <span>Avançado</span>
+                                    <ul>
+                                        <li>Meta Tags e SEO</li>
+                                        <li>Formulários</li>
+                                        <li>Componentização de elementos</li>
+                                        <li>Código dinâmico</li>
+                                    </ul>
+                                </div>
+                                <div class="card">
+                                    <span>HTML</span>
+                                    <span>Avançado</span>
+                                    <ul>
+                                        <li>Meta Tags e SEO</li>
+                                        <li>Formulários</li>
+                                        <li>Componentização de elementos</li>
+                                        <li>Código dinâmico</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -162,28 +309,33 @@
         </section>
         <section id="experience" class="section_experience">
             <div class="container">
-                <div class="component_title">
-                    <h2>Experience</h2>
+                <div class="widget_title">
+                    <h1>Experience</h1>
+                </div>
+                <div class="component_experience">
+
                 </div>
             </div>
         </section>
         <section id="portfolio" class="section_portfolio">
             <div class="container">
-                <div class="component_title">
-                    <h2>Portfolio</h2>
+                <div class="widget_title">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="component_portfolio">
+
                 </div>
             </div>
         </section>
-        <section id="contact" class="section_contact">
+        <section id="contacts" class="section_contacts">
             <div class="container">
-                <div class="component_title">
-                    <h2>Contacts</h2>
+                <div class="widget_title">
+                    <h1>Contacts</h1>
                 </div>
-                <div class="component_contacts">
+                <div class="widget_contacts">
                     <span>Interessado? Entre em contato!</span>
-                    <span>Estou aberto a projetos dentro de minha linha de conhecimento e até mesmo a desafios com
-                        tecnologias novas.</span>
-                    <div class="socials">
+                    <span>Estou aberto a projetos dentro de minha linha de conhecimento e até mesmo a desafios com tecnologias novas.</span>
+                    <div class="element_socials">
                         <a href="#" aria-label="Instagram">
                             <i class="fa-brands fa-instagram"></i>
                         </a>

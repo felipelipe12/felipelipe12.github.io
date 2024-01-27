@@ -34,9 +34,6 @@
   --dark-midnight-blue: #003566;
   --golden-poppy: #FFC300;
   --white: #FFFFFF;
-  
-  --html: #F16528;
-  --css: #0070BA;
 }
 
 html {
@@ -45,11 +42,13 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  /* -webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-ms-user-select: none; */
+	user-select: none;
 }
 
 section {
-  display: flex;
-  align-items: center;
   padding: 50px 0;
 }
 
@@ -61,7 +60,7 @@ section:nth-child(even) {
   background-color: var(--dark-midnight-blue);
 }
 
-h2 {
+h1 {
   color: var(--white);
   font-weight: 800;
   font-size: 3.6em;
@@ -111,44 +110,47 @@ header nav a:hover {
 
 /* Section - Hero */
 section.section_home {
+  display: flex;
+  align-items: center;
   height: 100dvh;
 }
 
 section.section_home .container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 
-section.section_home .container .row .component_text {
+section.section_home .container .widget_multiple-titles {
   display: flex;
   flex-direction: column;
 }
 
-section.section_home .container .row .component_text span:nth-child(1) {
+section.section_home .container .widget_multiple-titles span:nth-child(1) {
   color: var(--white);
   font-size: 2.4em;
   font-weight: 600;
 }
 
-section.section_home .container .row .component_text span:nth-child(2) {
+section.section_home .container .widget_multiple-titles span:nth-child(2) {
   color: var(--white);
   font-size: 4.2em;
   font-weight: 700;
 }
 
-section.section_home .container .row .component_text span:nth-child(3) {
+section.section_home .container .widget_multiple-titles span:nth-child(3) {
   color: var(--golden-poppy);
   font-size: 2em;
   font-weight: 600;
 }
 
-section.section_home .container .row .component_buttons {
-  padding-top: 50px;
+section.section_home .container .widget_multiple-buttons {
+  display: flex;
+  gap: 30px;
 }
 
-section.section_home .container .row .component_buttons a {
+section.section_home .container .widget_multiple-buttons a {
   background-color: var(--rich-black);
   border: 3px solid transparent;
   border-radius: 5px;
@@ -162,7 +164,7 @@ section.section_home .container .row .component_buttons a {
   text-decoration: none;
 }
 
-section.section_home .container .row .component_buttons a:hover {
+section.section_home .container .widget_multiple-buttons a:hover {
   box-shadow: 0px 0px 20px var(--rich-black);
   background-color: var(--golden-poppy);
   color: var(--maastricht-blue);
@@ -175,34 +177,35 @@ section.section_about .container {
   gap: 50px;
 }
 
-section.section_about .container .component_profile {
+section.section_about .container .widget_about {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-section.section_about .container .component_profile .row .element_info {
+section.section_about .container .widget_about .component_profile {
   display: flex;
   gap: 50px;
 }
 
-section.section_about .container .component_profile .row .element_info .column {
+section.section_about .container .widget_about .component_profile .element_image,
+section.section_about .container .widget_about .component_profile .element_text {
   width: 50%;
 }
 
-section.section_about .container .component_profile .row .element_info .column p {
+section.section_about .container .widget_about .component_profile .element_text p {
   color: var(--white);
   line-height: 24px;
   margin: 1em;
 }
 
-section.section_about .container .component_profile .row .element_data {
+section.section_about .container .widget_about .component_data {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-section.section_about .container .component_profile .row .element_data .sub-element_data {
+section.section_about .container .widget_about .component_data .element_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,30 +218,32 @@ section.section_about .container .component_profile .row .element_data .sub-elem
   transition: .3s;
 }
 
-section.section_about .container .component_profile .row .element_data .sub-element_data:hover {
+section.section_about .container .widget_about .component_data .element_card:hover {
   background-color: var(--golden-poppy);
   box-shadow: 0px 0px 20px var(--rich-black);
 }
 
-section.section_about .container .component_profile .row .element_data .sub-element_data .title {
+section.section_about .container .widget_about .component_data .element_card span:nth-child(1) {
   color: var(--golden-poppy);
   font-size: 3em;
   font-weight: 800;
 }
 
-section.section_about .container .component_profile .row .element_data .sub-element_data .subtitle {
+section.section_about .container .widget_about .component_data .element_card span:nth-child(2) {
   color: var(--white);
   font-size: 1em;
   font-weight: 600;
 }
 
-section.section_about .container .component_profile .row .element_data .sub-element_data:hover > .title {
+section.section_about .container .widget_about .component_data .element_card:hover > span:nth-child(1) {
   color: var(--dark-midnight-blue);
 }
 
-section.section_about .container .component_profile .row .element_data .sub-element_data:hover > .subtitle {
+section.section_about .container .widget_about .component_data .element_card:hover > span:nth-child(2) {
   color: var(--maastricht-blue);
 }
+
+/* ---------------------------------------------------- Verify ---------------------------------------------------- */
 
 /* Section - Skills */
 section.section_skills .container {
@@ -247,76 +252,114 @@ section.section_skills .container {
   gap: 50px;
 }
 
-section.section_skills .container .component_abilities .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-section.section_skills .container .component_abilities .row .theme_card {
+section.section_skills .container .widget_skills {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-section.section_skills .container .component_abilities .row .theme_card .theme_techs {
+section.section_skills .container .widget_skills .component_navigation {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
-section.section_skills .container .component_abilities .row .element_card {
-  border-radius: 25px;
-  border: 5px solid var(--white);
-  cursor: default;
-}
-
-section.section_skills .container .component_abilities .row .element_card:nth-child(1):hover > .head .icon {
-  background-color: var(--html);
-  border-radius: 20px 0 25px 0;
-}
-
-section.section_skills .container .component_abilities .row .element_card:nth-child(2):hover > .head .icon {
-  background-color: var(--css);
-  border-radius: 20px 0 25px 0;
-}
-
-section.section_skills .container .component_abilities .row .element_card .head {
+section.section_skills .container .widget_skills .component_navigation label {
   display: flex;
-}
-
-section.section_skills .container .component_abilities .row .element_card .head .icon {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  border-bottom: 3px solid white;
-  border-right: 3px solid white;
-  border-radius: 20px 0 25px 0;
-  height: 50px;
-  width: 50px;
+  gap: 15px;
+  background-color: var(--dark-midnight-blue);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
   transition: .3s;
 }
 
-section.section_skills .container .component_abilities .row .element_card .head .icon i {
-  color: var(--white);
-  font-size: 24px;
+section.section_skills .container .widget_skills .component_navigation label i {
+  color: var(--golden-poppy);
+  font-size: 1.6em;
 }
 
-section.section_skills .container .component_abilities .row .element_card .head .title {
+section.section_skills .container .widget_skills .component_navigation label span {
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+section.section_skills .container .widget_skills .component_navigation label:hover {
+  background-color: var(--golden-poppy);
+}
+
+section.section_skills .container .widget_skills .component_navigation label:hover > i {
+  color: var(--dark-midnight-blue);
+}
+
+section.section_skills .container .widget_skills .component_navigation label:hover > span {
+  color: var(--maastricht-blue);
+}
+
+section.section_skills .container .widget_skills .component_information {
+  background-color: var(--dark-midnight-blue);
+  border-radius: 20px;
+  padding: 16px;
+}
+
+section.section_skills .container .widget_skills .component_information .element_tabs > input {
+  display: none;
+}
+
+section.section_skills .container .widget_skills .component_information .element_tabs > input + .cards .card,
+section.section_skills .container .widget_skills .component_information .element_tabs > input + .cards .card span:nth-child(1),
+section.section_skills .container .widget_skills .component_information .element_tabs > input + .cards .card span:nth-child(2),
+section.section_skills .container .widget_skills .component_information .element_tabs > input + .cards .card ul {
+  display: none;
+}
+
+section.section_skills .container .widget_skills .component_information .element_tabs > input:checked + .cards .card,
+section.section_skills .container .widget_skills .component_information .element_tabs > input:checked + .cards .card span:nth-child(1),
+section.section_skills .container .widget_skills .component_information .element_tabs > input:checked + .cards .card span:nth-child(2),
+section.section_skills .container .widget_skills .component_information .element_tabs > input:checked + .cards .card ul {
+  display: block;
+}
+
+section.section_skills .container .widget_skills .component_information .element_tabs .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+section.section_skills .container .widget_skills .component_information .element_tabs .cards .card {
+  background-color: var(--maastricht-blue);
+  color: var(--white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 10px;
-  color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
 }
 
-section.section_skills .container .component_abilities .row .element_card .head .title span {
-  font-size: 12px;
+section.section_skills .container .widget_skills .component_information .element_tabs .cards .card span:nth-child(1) {
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
-section.section_skills .container .component_abilities .row .element_card .body {
-  padding: 8px;
+section.section_skills .container .widget_skills .component_information .element_tabs .cards .card span:nth-child(2) {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section.section_skills .container .widget_skills .component_information .element_tabs .cards .card ul {
+  font-size: 1em;
+  list-style-position: inside;
+  line-height: 1.4em;
+}
+
+/* Section - Experience */
+section.section_experience .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 /* Section - Portfolio */
@@ -326,44 +369,38 @@ section.section_portfolio .container {
   gap: 50px;
 }
 
-
-
-
-
-
-
 /* Section - Contact */
-section.section_contact .container {
+section.section_contacts .container {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-section.section_contact .container .component_contacts {
+section.section_contacts .container .widget_contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-section.section_contact .container .component_contacts span:nth-child(1) {
+section.section_contacts .container .widget_contacts span:nth-child(1) {
   color: var(--golden-poppy);
   font-size: 2em;
   font-weight: 600;
 }
 
-section.section_contact .container .component_contacts span:nth-child(2) {
+section.section_contacts .container .widget_contacts span:nth-child(2) {
   color: var(--white);
   font-size: 1em;
   line-height: 24px;
 }
 
-section.section_contact .container .component_contacts .socials {
+section.section_contacts .container .widget_contacts .element_socials {
   display: flex;
   gap: 25px;
 }
 
-section.section_contact .container .component_contacts .socials a {
+section.section_contacts .container .widget_contacts .element_socials a {
   background-color: var(--maastricht-blue);
   border-radius: 5px;
   color: var(--white);
@@ -377,7 +414,7 @@ section.section_contact .container .component_contacts .socials a {
   width: 50px;
 }
 
-section.section_contact .container .component_contacts .socials a:hover {
+section.section_contacts .container .widget_contacts .element_socials a:hover {
   background-color: var(--golden-poppy);
   color: var(--maastricht-blue);
 }
@@ -410,27 +447,3 @@ footer .container .techs {
   font-size: 1.4em;
 }
 
-
-
-
-
-
-
-
-
-
-/* Test */
-#html, #modal {
-  display: none;
-}
-
-#html:target, #modal:target {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 100dvh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-}

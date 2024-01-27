@@ -430,18 +430,18 @@ footer .container {
   justify-content: space-between;
 }
 
-footer .container .copyright, 
-footer .container .techs {
+footer .container .widget_copyright, 
+footer .container .widget_techs {
   display: flex;
   align-items: center;
   color: var(--white);
 }
 
-footer .container .copyright {
+footer .container .widget_copyright {
   font-size: 1em;
 }
 
-footer .container .techs {
+footer .container .widget_techs {
   display: flex;
   gap: 25px;
   font-size: 1.4em;

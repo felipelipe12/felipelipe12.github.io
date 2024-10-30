@@ -1,0 +1,26 @@
+header {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header nav a {
+    background-color: var(--color-300);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    transition: .3s;
+}
+
+header nav a:hover {
+    background-color: var(--color-950);
+    box-shadow: 0 0 25px var(--color-950);
+    color: var(--color-050);
+}

@@ -3,347 +3,133 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My portfolio">
-    <meta name="keywords" content="Portfolio">
     <meta name="author" content="Felipe Almeida">
+    <meta name="description" content="Portfolio - Felipe Almeida">
+    <meta name="keywords" content="Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Felipe Almeida</title>
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/820f8511d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#home" aria-label="Home">
-                <i class="fa-solid fa-house-chimney"></i>
+            <a href="#hero">
+                <i class="fa-solid fa-house"></i>
             </a>
-            <a href="#about" aria-label="About">
-                <i class="fa-solid fa-user"></i>
+            <a href="#about">
+                <i class="fa-solid fa-house"></i>
             </a>
-            <a href="#skills" aria-label="Skills">
+            <a href="#portfolio">
+                <i class="fa-solid fa-folder-open"></i>
+            </a>
+            <a href="#experience">
                 <i class="fa-solid fa-book"></i>
             </a>
-            <a href="#experience" aria-label="Experience">
-                <i class="fa-solid fa-briefcase"></i>
-            </a>
-            <a href="#portfolio" aria-label="Portfolio">
-                <i class="fa-solid fa-display"></i>
-            </a>
-            <a href="#contacts" aria-label="Contacts">
-                <i class="fa-solid fa-paper-plane"></i>
+            <a href="#contact">
+                <i class="fa-solid fa-house"></i>
             </a>
         </nav>
     </header>
     <main>
-        <section id="home" class="section_home">
+        <section id="hero">
             <div class="container">
-                <div class="widget_multiple-titles">
-                    <span>Olá, sou o</span>                        
-                    <span>Felipe Almeida</span>
-                    <span>Web Developer | Front-End</span>
+                <div class="hero--title">
+                    <span>Olá, sou o</span>
+                    <h1>Felipe Almeida</h1>
+                    <h5>Web Developer | React.js, Next.js, Express.js, Node.js, APIs REST</h5>
                 </div>
-                <div class="widget_multiple-buttons">
-                    <a href="#">Explorar</a>
-                    <a href="#">Currículo</a>
+                <div class="hero--button">
+                    <button>Explorar</button>
+                    <button>Currículo</button>
                 </div>
             </div>
         </section>
-        <section id="about" class="section_about">
+        <section id="about">
             <div class="container">
-                <div class="widget_title">
-                    <h1>About</h1>
-                </div>
-                <div class="widget_about">
-                    <div class="component_profile">
-                        <div class="element_image">
-                            <img src="" alt="">
-                            <span>image</span>
+                <h2>Sobre</h2>
+                <div class="about__elements">
+                    <div class="about__elements--profile">
+                        <div class="elements__profile--images">
+                            <img src="img/Felipe-Almeida.png" alt="">
                         </div>
-                        <div class="element_text">
+                        <div class="elements__profile--icons">
+                            <a href="https://github.com/felipelipe12">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://codepen.io/felipelipe12">
+                                <i class="fa-brands fa-codepen"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__elements--infos">
+                        <div class="elements__infos--texts">
                             <p>Sou Web Developer, com ênfase em Front-End. Desenvolvo interfaces web modernas e
-                            responsivas para diversos direcionamentos atendendo as expectativas e demandas das
-                            empresas no meio online. Estou sempre preparado para atuar em equipe e compartilhar
-                            conhecimento, visando atender metas e crescer coletivamente.</p>
-                            <p>Busco aprimorar minhas habilidades e conhecimentos, sempre me atualizando às
-                            tendências no meio tecnológico. Possuo confiança que minha contribuição seja
-                            significativa para o progresso e evolução de projetos e equipes.</p>
+                                responsivas para diversos direcionamentos atendendo as expectativas e demandas das
+                                empresas no meio online. Estou sempre preparado para atuar em equipe e compartilhar
+                                conhecimento, visando atender metas e crescer coletivamente.</p>
+                            <p> Busco aprimorar minhas habilidades e conhecimentos, sempre me atualizando às
+                                tendências no meio tecnológico. Possuo confiança que minha contribuição seja
+                                significativa para o progresso e evolução de projetos e equipes.</p>
                         </div>
-                    </div>
-                    <div class="component_data">
-                        <div class="element_card">
-                            <span>+7</span>
-                            <span>Anos de experiência</span>
-                        </div>
-                        <div class="element_card">
-                            <span>+50</span>
-                            <span>Projetos finalizados</span>
-                        </div>
-                        <div class="element_card">
-                            <span>+13</span>
-                            <span>Clientes</span>
-                        </div>
-                        <div class="element_card">
-                            <span>+20</span>
-                            <span>Tecnologias</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="section_skills">
-            <div class="container">
-                <div class="widget_title">
-                    <h1>Skills</h1>
-                </div>
-                <div class="widget_skills">
-                    <div class="component_navigation">
-                        <label for="grid_technologies">
-                            <i class="fa-solid fa-code"></i>
-                            <span>Tecnologias</span>
-                        </label>
-                        <label for="grid_frameworks">
-                            <i class="fa-solid fa-code-branch"></i>
-                            <span>Frameworks</span>
-                        </label>
-                        <label for="grid_tools">
-                            <i class="fa-solid fa-gears"></i>
-                            <span>Ferramentas</span>
-                        </label>
-                        <label for="grid_abilities">
-                            <i class="fa-solid fa-table"></i>
-                            <span>Habilidades</span>
-                        </label>
-                    </div>
-                    <div class="component_information">
-                        <div class="element_tabs">
-                            <input type="radio" id="grid_technologies" name="tabs" checked>
-                            <div class="cards">
-                                <div class="card">
-                                    <span>HTML</span>
-                                    <span>Avançado</span>
-                                    <ul>
-                                        <li>Meta Tags e SEO</li>
-                                        <li>Formulários</li>
-                                        <li>Componentização de elementos</li>
-                                        <li>Código dinâmico</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>CSS</span>
-                                    <span>Avançado</span>
-                                    <ul>
-                                        <li>Flexbox e Grid Layout</li>
-                                        <li>Responsividade</li>
-                                        <li>Animações</li>
-                                        <li>Variáveis</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>JavaScript</span>
-                                    <span>Básico</span>
-                                    <ul>
-                                        <li>Funções</li>
-                                        <li>Validações</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>SQL</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Modelo de dados (Relacional)</li>
-                                        <li>Syntaxe</li>
-                                        <li>Plataformas (MySQL, PostgreSQL, MongoDB)</li>
-                                    </ul>
-                                </div>
+                        <div class="elements__infos--quantities">
+                            <div class="infos__quantities--card">
+                                <h4>+8</h4>
+                                <span>Anos de experiência</span>
                             </div>
-                        </div>
-                        <div class="element_tabs">
-                            <input type="radio" id="grid_frameworks" name="tabs">
-                            <div class="cards">
-                                <div class="card">
-                                    <span>React.js</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Hooks</li>
-                                        <li>Componenentes</li>
-                                        <li>Responsividade</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Bootstrap 5</span>
-                                    <span>Intermediário</span>
-                                    <ul class="list">
-                                        <li>Flexbox e Grid Layout</li>
-                                        <li>Componentes</li>
-                                        <li>Responsividade</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Tailwind CSS</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Flexbox e Grid Layout</li>
-                                        <li>Componentes</li>
-                                        <li>Responsividade</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Chakra UI</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Flexbox e Grid Layout</li>
-                                        <li>Componentes</li>
-                                        <li>Responsividade</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Materialize CSS</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Flexbox e Grid Layout</li>
-                                        <li>Componentes</li>
-                                        <li>Responsividade</li>
-                                    </ul>
-                                </div>
+                            <div class="infos__quantities--card">
+                                <h4>+50</h4>
+                                <span>Projetos finalizados</span>
                             </div>
-                        </div>
-                        <div class="element_tabs">
-                            <input type="radio" id="grid_tools" name="tabs">
-                            <div class="cards">
-                                <div class="card">
-                                    <span>WordPress</span>
-                                    <span>Avançado</span>
-                                    <ul>
-                                        <li>Temas e Plugins</li>
-                                        <li>Manutenção</li>
-                                        <li>Backup e Performance</li>
-                                        <li>Page Builders</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Webflow</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Meta Tags e SEO</li>
-                                        <li>Componentização</li>
-                                        <li>Responsividade</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Shopify</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Temas e Plugins</li>
-                                        <li>Configurações de ambiente</li>
-                                        <li>Versionamento</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Figma</span>
-                                    <span>Intermediário</span>
-                                    <ul>
-                                        <li>Wireframes e Prototipação</li>
-                                        <li>Plugins</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>Node.js</span>
-                                    <span>Básico</span>
-                                    <ul>
-                                        <li>API Rest</li>
-                                    </ul>
-                                </div>
+                            <div class="infos__quantities--card">
+                                <h4>+13</h4>
+                                <span>Clientes satisfeitos</span>
                             </div>
-                        </div>
-                        <div class="element_tabs">
-                            <input type="radio" id="grid_abilities" name="tabs">
-                            <div class="cards">
-                                <div class="card">
-                                    <span>HTML</span>
-                                    <span>Avançado</span>
-                                    <ul>
-                                        <li>Meta Tags e SEO</li>
-                                        <li>Formulários</li>
-                                        <li>Componentização de elementos</li>
-                                        <li>Código dinâmico</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>HTML</span>
-                                    <span>Avançado</span>
-                                    <ul>
-                                        <li>Meta Tags e SEO</li>
-                                        <li>Formulários</li>
-                                        <li>Componentização de elementos</li>
-                                        <li>Código dinâmico</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>HTML</span>
-                                    <span>Avançado</span>
-                                    <ul>
-                                        <li>Meta Tags e SEO</li>
-                                        <li>Formulários</li>
-                                        <li>Componentização de elementos</li>
-                                        <li>Código dinâmico</li>
-                                    </ul>
-                                </div>
-                                <div class="card">
-                                    <span>HTML</span>
-                                    <span>Avançado</span>
-                                    <ul>
-                                        <li>Meta Tags e SEO</li>
-                                        <li>Formulários</li>
-                                        <li>Componentização de elementos</li>
-                                        <li>Código dinâmico</li>
-                                    </ul>
-                                </div>
+                            <div class="infos__quantities--card">
+                                <h4>+20</h4>
+                                <span>Tecnologias e ferramentas</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="experience" class="section_experience">
+        <section id="portfolio">
             <div class="container">
-                <div class="widget_title">
-                    <h1>Experience</h1>
-                </div>
-                <div class="component_experience">
+                <h2>Portfolio</h2>
+                <div class="portfolio__elements">
 
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="section_portfolio">
+        <section id="experience">
             <div class="container">
-                <div class="widget_title">
-                    <h1>Portfolio</h1>
-                </div>
-                <div class="component_portfolio">
-
-                </div>
+                <h2>Experiência</h2>
             </div>
         </section>
-        <section id="contacts" class="section_contacts">
+        <section id="contact">
             <div class="container">
-                <div class="widget_title">
-                    <h1>Contacts</h1>
-                </div>
-                <div class="widget_contacts">
-                    <span>Interessado? Entre em contato!</span>
-                    <span>Estou aberto a projetos dentro de minha linha de conhecimento e até mesmo a desafios com tecnologias novas.</span>
-                    <div class="element_socials">
-                        <a href="#" aria-label="Instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:felipe.lipe12.fl@outlook.com" aria-label="E-mail">
+                <h2>Contato</h2>
+                <div class="contact__elements">
+                    <div class="contact__elements--infos">
+                        <h5>Interessado? Entre em contato!</h5>
+                        <span>Estou aberto a projetos dentro de minha linha de conhecimento e até mesmo a desafios com
+                            novas tecnologias.</span>
+                    </div>
+                    <div class="contact__elements--links">
+                        <a href="mainto:felipe.lipe12.fl@outlook.com">
                             <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/felipe-melo-de-almeida/">
+                            <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
@@ -352,16 +138,15 @@
     </main>
     <footer>
         <div class="container">
-            <div class="widget_copyright">
-                <span>© <span id="year"></span> Felipe Almeida. Todos os direitos reservados.</span>
-            </div>
-            <div class="widget_techs">
+            <span class="footer--copyright">© Felipe Almeida. Todos os direitos reservados.</span>
+            <div class="footer--icons">
                 <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-css3"></i>
                 <i class="fa-brands fa-js"></i>
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/820f8511d6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

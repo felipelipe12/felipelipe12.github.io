@@ -1,0 +1,21 @@
+footer {
+    background-color: var(--color-500);
+    padding: 30px 0;
+}
+
+footer div.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.container span.footer--copyright,
+footer div.container div.footer--icons {
+    color: var(--color-050);
+    font-size: 20px;
+}
+
+footer div.container div.footer--icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

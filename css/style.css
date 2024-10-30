@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-050: #FFFFFF;
+    --color-300: #2DDE98;
+    --color-500: #003566;
+    --color-700: #001D3D;
+    --color-950: #000814;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    user-select: none;
+}
+
+section:first-child {
+    height: 100dvh;
+}
+
+section:not(section:first-child) {
+    padding: 80px 0;
+}
+
+section:nth-child(even) {
+    background-color: var(--color-500);
+}
+
+section:nth-child(odd) {
+    background-color: var(--color-700);
+}
+  
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-050);
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 78px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 64px;
+}
+
+h4 {
+    font-size: 48px;
+}
+
+h5 {
+    font-size: 36px;
+}
+
+h6 {
+    font-size: 32px;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+/* Section - Hero */
+section#hero {
+    background: linear-gradient(rgba(0, 29, 61, 0.8), var(--color-700)), url("../img/Background-Hero.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+section#hero div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#hero div.container div.hero--title span {
+    color: var(--color-050);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+section#hero div.container div.hero--title h5 {
+    color: var(--color-300);
+}
+
+section#hero div.container div.hero--button {
+    display: flex;
+    gap: 50px;
+}
+
+section#hero div.container div.hero--button button:nth-of-type(1) {
+    background-color: var(--color-950);
+    border: 5px solid var(--color-950);
+    color: var(--color-300);
+    transition: .3s;
+}
+
+section#hero div.container div.hero--button button:nth-of-type(1):hover {
+    background-color: var(--color-300);
+    border: 5px solid var(--color-300);
+    color: var(--color-950);
+    box-shadow: 0 0 25px var(--color-950);
+}
+
+section#hero div.container div.hero--button button:nth-of-type(2) {
+    background-color: transparent;
+    color: var(--color-300);
+    border: 5px solid var(--color-300);
+    transition: .3s;
+}
+
+section#hero div.container div.hero--button button:nth-of-type(2):hover {
+    background-color: var(--color-300);
+    border: 5px solid var(--color-300);
+    color: var(--color-950);
+    box-shadow: 0 0 25px var(--color-950);
+}
+
+/* Section - About */
+section#about div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#about div.container div.about__elements {
+    display: flex;
+    gap: 50px;
+}
+
+section#about div.container div.about__elements div.about__elements--profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+}
+
+section#about div.container div.about__elements div.about__elements--profile div.elements__profile--images img {
+    border: 5px solid var(--color-050);
+    border-radius: 10px;
+    width: 100%;
+    transition: .3s;
+}
+
+section#about div.container div.about__elements div.about__elements--profile div.elements__profile--images img:hover {
+    border: 5px solid var(--color-300);
+    box-shadow: 0 0 25px var(--color-950);
+}
+
+section#about div.container div.about__elements div.about__elements--profile div.elements__profile--icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+section#about div.container div.about__elements div.about__elements--profile div.elements__profile--icons a {
+    background-color: var(--color-300);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    transition: .3s;
+}
+
+section#about div.container div.about__elements div.about__elements--profile div.elements__profile--icons a:hover {
+    background-color: var(--color-950);
+    box-shadow: 0 0 25px var(--color-950);
+    color: var(--color-050);
+}
+
+section#about div.container div.about__elements div.about__elements--infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 75%;
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--texts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--texts p {
+    color: var(--color-050);
+    font-size: 22px;
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-950);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover {
+    background-color: var(--color-300);
+    border-radius: 10px;
+    box-shadow: 0 0 25px var(--color-950);
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover > h4 {
+    color: var(--color-950);
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover > span {
+    color: var(--color-950);
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card span {
+    color: var(--color-300);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section - Contact */
+section#contact div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#contact div.container div.contact__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section#contact div.container div.contact__elements div.contact__elements--infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+section#contact div.container div.contact__elements div.contact__elements--infos h5 {
+    color: var(--color-300);
+}
+
+section#contact div.container div.contact__elements div.contact__elements--infos span {
+    color: var(--color-050);
+    font-size: 22px;
+}
+
+section#contact div.container div.contact__elements div.contact__elements--links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+section#contact div.container div.contact__elements div.contact__elements--links a {
+    background-color: var(--color-300);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    transition: .3s;
+}
+
+section#contact div.container div.contact__elements div.contact__elements--links a:hover {
+    background-color: var(--color-950);
+    box-shadow: 0 0 25px var(--color-950);
+    color: var(--color-050);
+}

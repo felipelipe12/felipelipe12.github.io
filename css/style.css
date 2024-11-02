@@ -73,6 +73,10 @@ h6 {
     font-size: 32px;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
@@ -180,7 +184,12 @@ section#about div.container div.about__elements div.about__elements--profile div
 
 section#about div.container div.about__elements div.about__elements--profile div.elements__profile--icons a {
     background-color: var(--color-300);
+    color: var(--color-950);
+    font-size: 28px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
     width: 60px;
     transition: .3s;
@@ -247,17 +256,56 @@ section#about div.container div.about__elements div.about__elements--infos div.e
     font-weight: 600;
 }
 
-/* Section - Contact */
+/* Section - Portfolio */
 section#portfolio div.container {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-section#portfolio div.container div.portfiolio__elements {
+section#portfolio div.container div.portfolio__elements {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements__card {
+    border: 5px solid var(--color-050);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+    height: 300px;
+    transition: .3s;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements__card:hover {
+    border: 5px solid var(--color-300);
+    box-shadow: 0 0 25px var(--color-050);
+}
+
+section#portfolio div.container div.portfolio__elements div.elements__card:nth-of-type(1) {
+    /* background: url("/img/Card-Jankenpon.png"); */
+    background-position: center;
+    background-size: cover;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements__card:nth-of-type(2) {
+    /* background: url("/img/Card-Random.png"); */
+    background-position: center;
+    background-size: cover;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements__card span {
+    color: var(--color-050);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements__card span a {
+
 }
 
 
@@ -265,7 +313,33 @@ section#portfolio div.container div.portfiolio__elements {
 
 
 
+/* Section - Experience */
+section#experience div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
+section#experience div.container div.experience__elements {
+    display: flex;
+    flex-direction: column;
+}
+
+section#experience div.container div.experience__elements input {
+    display: none;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--buttons label {
+    background-color: var(--color-700);
+    border-radius: 10px;
+    padding: 20px;
+}
 
 /* Section - Contact */
 section#contact div.container {
@@ -277,7 +351,7 @@ section#contact div.container {
 section#contact div.container div.contact__elements {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 section#contact div.container div.contact__elements div.contact__elements--infos {

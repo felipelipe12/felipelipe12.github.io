@@ -21,20 +21,20 @@
 <body>
     <header>
         <nav>
-            <a href="#hero">
+            <a href="#hero" aria-label="Hero Link">
                 <i class="fa-solid fa-house"></i>
             </a>
-            <a href="#about">
-                <i class="fa-solid fa-house"></i>
+            <a href="#about" aria-label="About Link">
+                <i class="fa-solid fa-user"></i>
             </a>
-            <a href="#portfolio">
+            <a href="#portfolio" aria-label="Portfolio Link">
                 <i class="fa-solid fa-folder-open"></i>
             </a>
-            <a href="#experience">
+            <a href="#experience" aria-label="Experience Link">
                 <i class="fa-solid fa-book"></i>
             </a>
-            <a href="#contact">
-                <i class="fa-solid fa-house"></i>
+            <a href="#contact" aria-label="Contact Link">
+                <i class="fa-solid fa-paper-plane"></i>
             </a>
         </nav>
     </header>
@@ -108,13 +108,55 @@
             <div class="container">
                 <h2>Portfolio</h2>
                 <div class="portfolio__elements">
-
+                    <div class="elements__card">
+                        <span>Jogos e Utilitários</span>
+                        <a href="" aria-label="Jogos e Utilitários">Explorar</a>
+                    </div>
+                    <div class="elements__card">
+                        <span>Landing Pages</span>
+                    </div>
+                    <div class="elements__card">
+                        <span>Sistemas</span>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="experience">
             <div class="container">
                 <h2>Experiência</h2>
+                <div class="experience__elements">
+                    <input id="experience1" type="radio" name="experience" checked>
+                    <input id="experience2" type="radio" name="experience">
+                    <input id="experience3" type="radio" name="experience">
+                    <input id="experience4" type="radio" name="experience">
+                    <div class="experience__elements--buttons">
+                        <label for="experience1">
+                            <i class="fa-solid fa-pen-fancy"></i>
+                            <span>Front</span>
+                        </label>
+                        <label for="experience2">
+                            <i class="fa-solid fa-wrench"></i>
+                            <span>Back</span>
+                        </label>
+                        <label for="experience3">
+                            <i></i>
+                            <span>XP</span>
+                        </label>
+                        <label for="experience4">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <span>Gestão e performance</span>
+                        </label>
+                    </div>
+                    <div class="experience__experience--content">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="">
+                            Git e Github
+                            scrum, kanban, acessibiidade, seo, otimização
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact">

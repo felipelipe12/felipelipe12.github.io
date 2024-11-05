@@ -323,9 +323,10 @@ section#experience div.container {
 section#experience div.container div.experience__elements {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
-section#experience div.container div.experience__elements input {
+section#experience div.container div.experience__elements input[type="radio"] {
     display: none;
 }
 
@@ -337,9 +338,64 @@ section#experience div.container div.experience__elements div.experience__elemen
 
 section#experience div.container div.experience__elements div.experience__elements--buttons label {
     background-color: var(--color-700);
+    color: var(--color-050);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--buttons label:hover {
+    background-color: var(--color-050);
+    color: var(--color-700);
+    box-shadow: 0 0 25px var(--color-950);
+}
+
+section#experience div.container div.experience__elements div.experience__elements--buttons label i {
+    font-size: 28px;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--buttons label span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content {
+    background-color: var(--color-700);
     border-radius: 10px;
     padding: 20px;
 }
+
+section#experience div.container div.experience__elements div.experience__elements--content span.elements__content--cards {
+    display: none;
+}
+
+input#experience1:checked ~ div.experience__elements--content span.elements__content--cards.experience1,
+input#experience2:checked ~ div.experience__elements--content span.elements__content--cards.experience2,
+input#experience3:checked ~ div.experience__elements--content span.elements__content--cards.experience3,
+input#experience4:checked ~ div.experience__elements--content span.elements__content--cards.experience4 {
+    display: block !important;
+}
+
+input#experience1:checked ~ div.experience__elements--buttons label[for="experience1"],
+input#experience2:checked ~ div.experience__elements--buttons label[for="experience2"],
+input#experience3:checked ~ div.experience__elements--buttons label[for="experience3"],
+input#experience4:checked ~ div.experience__elements--buttons label[for="experience4"] {
+    background-color: var(--color-300) !important;
+    color: var(--color-700) !important;
+    box-shadow: 0 0 25px var(--color-950);
+}
+
+
+
+
+
+
+
 
 /* Section - Contact */
 section#contact div.container {

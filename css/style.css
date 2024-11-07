@@ -117,11 +117,12 @@ header nav a:hover {
     background-color: var(--color-950);
     box-shadow: 0 0 25px var(--color-950);
     color: var(--color-050);
+    transform: scale(1.2);
 }
 
 /* Section - Hero */
 section#hero {
-    background: linear-gradient(#050f2cbb, var(--color-700)), url("../img/Background-Hero.webp");
+    background: linear-gradient(#050f2cbb, var(--color-700)), url("../img/Hero-Background.webp");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -207,6 +208,7 @@ section#about div.container div.about__elements div.about__elements--profile div
 section#about div.container div.about__elements div.about__elements--profile div.elements__profile--images img:hover {
     border: 5px solid var(--color-300);
     box-shadow: 0 0 25px var(--color-950);
+    transform: scale(1.05);
 }
 
 section#about div.container div.about__elements div.about__elements--profile div.elements__profile--icons {
@@ -232,6 +234,7 @@ section#about div.container div.about__elements div.about__elements--profile div
     background-color: var(--color-950);
     box-shadow: 0 0 25px var(--color-950);
     color: var(--color-050);
+    transform: scale(1.2);
 }
 
 section#about div.container div.about__elements div.about__elements--infos {
@@ -273,6 +276,7 @@ section#about div.container div.about__elements div.about__elements--infos div.e
     background-color: var(--color-300);
     border-radius: 10px;
     box-shadow: 0 0 25px var(--color-950);
+    transform: scale(1.05);
 }
 
 section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover > h4 {
@@ -317,6 +321,7 @@ section#portfolio div.container div.portfolio__elements div.elements__card {
 section#portfolio div.container div.portfolio__elements div.elements__card:hover {
     border: 5px solid var(--color-300);
     box-shadow: 0 0 25px var(--color-050);
+    transform: scale(1.05);
 }
 
 section#portfolio div.container div.portfolio__elements div.elements__card:nth-of-type(1) {
@@ -340,11 +345,6 @@ section#portfolio div.container div.portfolio__elements div.elements__card span 
 section#portfolio div.container div.portfolio__elements div.elements__card span a {
 
 }
-
-
-
-
-
 
 /* Section - Experience */
 section#experience div.container {
@@ -386,6 +386,7 @@ section#experience div.container div.experience__elements div.experience__elemen
     background-color: var(--color-050);
     color: var(--color-950);
     box-shadow: 0 0 25px var(--color-950);
+    transform: scale(1.05);
 }
 
 section#experience div.container div.experience__elements div.experience__elements--buttons label i {
@@ -400,28 +401,91 @@ section#experience div.container div.experience__elements div.experience__elemen
 section#experience div.container div.experience__elements div.experience__elements--content {
     background-color: var(--color-700);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 
-section#experience div.container div.experience__elements div.experience__elements--content span.elements__content--cards {
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards {
     display: none;
 }
 
-input#experience1:checked ~ div.experience__elements--content span.elements__content--cards.experience1,
-input#experience2:checked ~ div.experience__elements--content span.elements__content--cards.experience2,
-input#experience3:checked ~ div.experience__elements--content span.elements__content--cards.experience3,
-input#experience4:checked ~ div.experience__elements--content span.elements__content--cards.experience4 {
-    display: block !important;
+section#experience div.container div.experience__elements input#experience1:checked ~ div.experience__elements--content div.elements__content--cards.experience1,
+section#experience div.container div.experience__elements input#experience2:checked ~ div.experience__elements--content div.elements__content--cards.experience2,
+section#experience div.container div.experience__elements input#experience3:checked ~ div.experience__elements--content div.elements__content--cards.experience3,
+section#experience div.container div.experience__elements input#experience4:checked ~ div.experience__elements--content div.elements__content--cards.experience4 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-input#experience1:checked ~ div.experience__elements--buttons label[for="experience1"],
-input#experience2:checked ~ div.experience__elements--buttons label[for="experience2"],
-input#experience3:checked ~ div.experience__elements--buttons label[for="experience3"],
-input#experience4:checked ~ div.experience__elements--buttons label[for="experience4"] {
+section#experience div.container div.experience__elements input#experience1:checked ~ div.experience__elements--buttons label[for="experience1"],
+section#experience div.container div.experience__elements input#experience2:checked ~ div.experience__elements--buttons label[for="experience2"],
+section#experience div.container div.experience__elements input#experience3:checked ~ div.experience__elements--buttons label[for="experience3"],
+section#experience div.container div.experience__elements input#experience4:checked ~ div.experience__elements--buttons label[for="experience4"] {
     background-color: var(--color-300) !important;
     color: var(--color-950) !important;
     box-shadow: 0 0 25px var(--color-950);
 }
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech {
+    background-color: var(--color-500);
+    color: var(--color-050);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--description {
+    display: flex;
+    flex-direction: column;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--description span:nth-of-type(1) {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--description span:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--description span:nth-of-type(3) {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--links span {
+    font-size: 14px;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--links div.tech__links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--links div.tech__links img {
+    border-radius: 50px;
+    transition: .3s;
+}
+
+section#experience div.container div.experience__elements div.experience__elements--content div.elements__content--cards div.content__cards--tech div.cards__tech--links div.tech__links img:hover {
+    box-shadow: 0 0 25px var(--color-950);
+    transform: scale(1.1);
+}
+
+
+
 
 
 
@@ -482,6 +546,7 @@ section#contact div.container div.contact__elements div.contact__elements--links
     background-color: var(--color-950);
     box-shadow: 0 0 25px var(--color-950);
     color: var(--color-050);
+    transform: scale(1.2);
 }
 
 footer {

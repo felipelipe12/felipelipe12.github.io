@@ -77,15 +77,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 20px 50px;
-}
-
 /* Header */
 header {
     position: fixed;
@@ -146,33 +137,41 @@ section#hero div.container div.hero--title h5 {
     color: var(--color-300);
 }
 
-section#hero div.container div.hero--button {
+section#hero div.container div.hero--buttons {
     display: flex;
     gap: 50px;
 }
 
-section#hero div.container div.hero--button button:nth-of-type(1) {
+section#hero div.container div.hero--buttons a:nth-of-type(1) {
     background-color: var(--color-950);
     border: 5px solid var(--color-950);
     color: var(--color-300);
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px 50px;
     transition: .3s;
 }
 
-section#hero div.container div.hero--button button:nth-of-type(1):hover {
+section#hero div.container div.hero--buttons a:nth-of-type(1):hover {
     background-color: var(--color-300);
     border: 5px solid var(--color-300);
     color: var(--color-950);
     box-shadow: 0 0 25px var(--color-950);
 }
 
-section#hero div.container div.hero--button button:nth-of-type(2) {
+section#hero div.container div.hero--buttons a:nth-of-type(2) {
     background-color: transparent;
     color: var(--color-300);
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px 50px;
     border: 5px solid var(--color-300);
     transition: .3s;
 }
 
-section#hero div.container div.hero--button button:nth-of-type(2):hover {
+section#hero div.container div.hero--buttons a:nth-of-type(2):hover {
     background-color: var(--color-300);
     border: 5px solid var(--color-300);
     color: var(--color-950);

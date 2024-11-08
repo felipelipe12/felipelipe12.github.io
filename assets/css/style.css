@@ -43,9 +43,8 @@ section:nth-child(odd) {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     color: var(--color-050);
-    font-weight: 900;
 }
 
 h1 {
@@ -59,18 +58,6 @@ h2 {
 
 h3 {
     font-size: 64px;
-}
-
-h4 {
-    font-size: 48px;
-}
-
-h5 {
-    font-size: 36px;
-}
-
-h6 {
-    font-size: 32px;
 }
 
 a {
@@ -136,7 +123,7 @@ section#hero div.container div.hero--titles span:nth-of-type(1) {
 section#hero div.container div.hero--titles span:nth-of-type(2) {
     color: var(--color-300);
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 section#hero div.container div.hero--buttons {
@@ -279,18 +266,25 @@ section#about div.container div.about__elements div.about__elements--infos div.e
     transform: scale(1.05);
 }
 
-section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover > h4 {
-    color: var(--color-950);
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card span:nth-of-type(1) {
+    color: var(--color-050);
+    font-size: 48px;
+    font-weight: 900;
 }
 
-section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover > span {
-    color: var(--color-950);
-}
-
-section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card span {
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card span:nth-of-type(2) {
     color: var(--color-300);
     font-size: 22px;
     font-weight: 600;
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover > span:nth-of-type(1) {
+    color: var(--color-950);
+}
+
+section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card:hover > span:nth-of-type(2) {
+    color: var(--color-950);
 }
 
 /* Section - Portfolio */
@@ -503,11 +497,13 @@ section#contact div.container div.contact__elements div.contact__elements--infos
     gap: 30px;
 }
 
-section#contact div.container div.contact__elements div.contact__elements--infos h5 {
+section#contact div.container div.contact__elements div.contact__elements--infos span:nth-of-type(1) {
     color: var(--color-300);
+    font-size: 36px;
+    font-weight: 900;
 }
 
-section#contact div.container div.contact__elements div.contact__elements--infos span {
+section#contact div.container div.contact__elements div.contact__elements--infos span:nth-of-type(2) {
     color: var(--color-050);
     font-size: 22px;
 }

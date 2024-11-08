@@ -127,13 +127,13 @@ section#hero div.container {
     gap: 50px;
 }
 
-section#hero div.container div.hero--title span {
+section#hero div.container div.hero--titles span {
     color: var(--color-050);
     font-size: 30px;
     font-weight: 600;
 }
 
-section#hero div.container div.hero--title h5 {
+section#hero div.container div.hero--titles h5 {
     color: var(--color-300);
 }
 
@@ -200,7 +200,6 @@ section#about div.container div.about__elements div.about__elements--profile {
 section#about div.container div.about__elements div.about__elements--profile div.elements__profile--images img {
     border: 5px solid var(--color-050);
     border-radius: 10px;
-    width: 100%;
     transition: .3s;
 }
 
@@ -321,18 +320,6 @@ section#portfolio div.container div.portfolio__elements div.elements__card:hover
     border: 5px solid var(--color-300);
     box-shadow: 0 0 25px var(--color-050);
     transform: scale(1.05);
-}
-
-section#portfolio div.container div.portfolio__elements div.elements__card:nth-of-type(1) {
-    /* background: url("/img/Card-Jankenpon.png"); */
-    background-position: center;
-    background-size: cover;
-}
-
-section#portfolio div.container div.portfolio__elements div.elements__card:nth-of-type(2) {
-    /* background: url("/img/Card-Random.png"); */
-    background-position: center;
-    background-size: cover;
 }
 
 section#portfolio div.container div.portfolio__elements div.elements__card span {
@@ -482,16 +469,6 @@ section#experience div.container div.experience__elements div.experience__elemen
     box-shadow: 0 0 25px var(--color-950);
     transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Section - Contact */
 section#contact div.container {

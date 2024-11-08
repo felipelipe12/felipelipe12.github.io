@@ -127,14 +127,16 @@ section#hero div.container {
     gap: 50px;
 }
 
-section#hero div.container div.hero--titles span {
+section#hero div.container div.hero--titles span:nth-of-type(1) {
     color: var(--color-050);
     font-size: 30px;
     font-weight: 600;
 }
 
-section#hero div.container div.hero--titles h5 {
+section#hero div.container div.hero--titles span:nth-of-type(2) {
     color: var(--color-300);
+    font-size: 36px;
+    font-weight: 600;
 }
 
 section#hero div.container div.hero--buttons {

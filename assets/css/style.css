@@ -36,14 +36,8 @@ section:nth-child(even) {
 section:nth-child(odd) {
     background-color: var(--color-700);
 }
-  
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-}
 
-h1, h2, h3 {
+h1, h2 {
     color: var(--color-050);
 }
 
@@ -56,12 +50,14 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    font-size: 64px;
-}
-
 a {
     text-decoration: none;
+}
+  
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Header */
@@ -189,6 +185,8 @@ section#about div.container div.about__elements div.about__elements--profile {
 section#about div.container div.about__elements div.about__elements--profile div.elements__profile--images img {
     border: 5px solid var(--color-050);
     border-radius: 10px;
+    height: 100%;
+    width: 100%;
     transition: .3s;
 }
 
@@ -201,7 +199,7 @@ section#about div.container div.about__elements div.about__elements--profile div
 section#about div.container div.about__elements div.about__elements--profile div.elements__profile--icons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 section#about div.container div.about__elements div.about__elements--profile div.elements__profile--icons a {
@@ -266,7 +264,6 @@ section#about div.container div.about__elements div.about__elements--infos div.e
     transform: scale(1.05);
 }
 
-
 section#about div.container div.about__elements div.about__elements--infos div.elements__infos--quantities div.infos__quantities--card span:nth-of-type(1) {
     color: var(--color-050);
     font-size: 48px;
@@ -308,7 +305,7 @@ section#portfolio div.container div.portfolio__elements div.elements__card {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     height: 300px;
     transition: .3s;
 }
@@ -326,7 +323,6 @@ section#portfolio div.container div.portfolio__elements div.elements__card span 
 
 section#portfolio div.container div.portfolio__elements div.elements__card a {
     background-color: var(--color-300);
-    border: 5px solid var(--color-300);
     color: var(--color-950);
     font-size: 22px;
     font-weight: 600;
@@ -336,6 +332,7 @@ section#portfolio div.container div.portfolio__elements div.elements__card a {
 }
 
 section#portfolio div.container div.portfolio__elements div.elements__card a:hover {
+    box-shadow: 0 0 25px var(--color-950);
     transform: scale(1.05);
 }
 
@@ -534,6 +531,7 @@ section#contact div.container div.contact__elements div.contact__elements--links
     transform: scale(1.2);
 }
 
+/* Footer */
 footer {
     background-color: var(--color-500);
     padding: 30px 0;
@@ -547,7 +545,7 @@ footer div.container {
 footer div.container span.footer--copyright,
 footer div.container div.footer--icons {
     color: var(--color-050);
-    font-size: 22px;
+    font-size: 20px;
 }
 
 footer div.container div.footer--icons {

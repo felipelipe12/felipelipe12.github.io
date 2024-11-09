@@ -1,4 +1,12 @@
 @media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
+    
+    section {
+        display: none !important;
+    }
+    
     .container {
         max-width: 320px;
     }
@@ -6,7 +14,11 @@
   
 @media (min-width: 481px) and (max-width: 768px) {
     body {
-        display: none;
+        background-color: blue;
+    }
+    
+    section {
+        display: none !important;
     }
 
     .container {

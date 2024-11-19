@@ -313,8 +313,16 @@
     }
 }
   
-/* @media (min-width: 1441px) {
+@media (min-width: 1441px) {
+    body {
+        background-color: yellow;
+    }
+    
+    header, section, footer {
+        display: none !important;
+    }
+
     .container {
         max-width: 1440px;
     }
-} */
+}

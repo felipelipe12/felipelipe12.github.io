@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-050: #FFFFFF;
+    --color-300: #2DDE98;
+    --color-500: #003566;
+    --color-700: #050F2C;
+    --color-950: #000814;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    user-select: none;
+}
+
+section:first-child {
+    height: 100dvh;
+}
+
+section:not(section:first-child) {
+    padding: 80px 0;
+}
+
+section:nth-child(even) {
+    background-color: var(--color-500);
+}
+
+section:nth-child(odd) {
+    background-color: var(--color-700);
+}
+
+h1, h2, h3 {
+    color: var(--color-050);
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--color-050);
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+  
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header nav a {
+    background-color: var(--color-300);
+    color: var(--color-950);
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    transition: .3s;
+}
+
+header nav a:hover {
+    background-color: var(--color-950);
+    color: var(--color-050);
+    transform: scale(1.2);
+}
+
+/* Section - Hero */
+section#hero {
+    background: linear-gradient(#050f2cbb, var(--color-700)), 
+                url("../img/Hero-Background.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+section#hero div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#hero div.container div.hero--titles span:nth-of-type(1) {
+    color: var(--color-050);
+    font-size: 24px;
+}
+
+section#hero div.container div.hero--titles span:nth-of-type(2) {
+    color: var(--color-300);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+section#hero div.container div.hero--buttons {
+    display: flex;
+    gap: 30px;
+}
+
+section#hero div.container div.hero--buttons a:nth-of-type(1) {
+    background-color: var(--color-950);
+    border: 3px solid var(--color-950);
+    color: var(--color-300);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 30px;
+    transition: .3s;
+}
+
+section#hero div.container div.hero--buttons a:nth-of-type(1):hover {
+    background-color: var(--color-300);
+    border: 3px solid var(--color-300);
+    color: var(--color-950);
+}
+
+section#hero div.container div.hero--buttons a:nth-of-type(2) {
+    background-color: transparent;
+    border: 3px solid var(--color-300);
+    color: var(--color-300);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 30px;
+    transition: .3s;
+}
+
+section#hero div.container div.hero--buttons a:nth-of-type(2):hover {
+    background-color: var(--color-300);
+    border: 3px solid var(--color-300);
+    color: var(--color-950);
+}
+
+/* Section - About */
+section#about div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#about div.container div.about__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section#about div.container div.about__elements div.elements--texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section#about div.container div.about__elements div.elements--socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+section#about div.container div.about__elements div.elements--socials a {
+    background-color: var(--color-300);
+    color: var(--color-950);
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    width: 54px;
+    transition: .3s;
+}
+
+section#about div.container div.about__elements div.elements--socials a:hover {
+    background-color: var(--color-950);
+    color: var(--color-050);
+    transform: scale(1.2);
+}
+
+/* Section - skills */
+section#skills div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#skills div.container div.skills__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section#skills div.container div.skills__elements input[type="radio"] {
+    display: none;
+}
+
+section#skills div.container div.skills__elements div.elements__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+section#skills div.container div.skills__elements div.elements__buttons label {
+    background-color: var(--color-500);
+    color: var(--color-050);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+section#skills div.container div.skills__elements div.elements__buttons label:hover {
+    background-color: var(--color-050);
+    color: var(--color-950);
+    transform: scale(1.05);
+}
+
+section#skills div.container div.skills__elements div.elements__buttons label i {
+    font-size: 24px;
+}
+
+section#skills div.container div.skills__elements div.elements__buttons label span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section#skills div.container div.skills__elements div.elements__cards {
+    background-color: var(--color-500);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+section#skills div.container div.skills__elements div.elements__cards div.elements__group--cards {
+    display: none;
+}
+
+section#skills div.container div.skills__elements input#skills1:checked ~ div.elements__cards div.elements__group--cards.skills1,
+section#skills div.container div.skills__elements input#skills2:checked ~ div.elements__cards div.elements__group--cards.skills2,
+section#skills div.container div.skills__elements input#skills3:checked ~ div.elements__cards div.elements__group--cards.skills3,
+section#skills div.container div.skills__elements input#skills4:checked ~ div.elements__cards div.elements__group--cards.skills4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+section#skills div.container div.skills__elements input#skills1:checked ~ div.elements__buttons label[for="skills1"],
+section#skills div.container div.skills__elements input#skills2:checked ~ div.elements__buttons label[for="skills2"],
+section#skills div.container div.skills__elements input#skills3:checked ~ div.elements__buttons label[for="skills3"],
+section#skills div.container div.skills__elements input#skills4:checked ~ div.elements__buttons label[for="skills4"] {
+    background-color: var(--color-300) !important;
+    color: var(--color-950) !important;
+}
+
+section#skills div.container div.skills__elements div.elements__cards div.elements__group--cards div.cards__card {
+    background-color: var(--color-700);
+    color: var(--color-050);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 30px;
+}
+
+section#skills div.container div.skills__elements div.elements__cards div.elements__group--cards div.cards__card span:nth-of-type(1) {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+section#skills div.container div.skills__elements div.elements__cards div.elements__group--cards div.cards__card span:nth-of-type(2) {
+    font-size: 14px;
+}
+
+section#skills div.container div.skills__elements div.elements__cards div.elements__group--cards div.cards__card span:nth-of-type(3) {
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* Section - Portfolio */
+section#portfolio div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#portfolio div.container div.portfolio__elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card {
+    border: 3px solid var(--color-050);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+    height: 200px;
+    transition: .3s;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card:nth-of-type(1) {
+    background: linear-gradient(#00356680),
+                url("../img/Portfolio-Background-1.webp");
+    background-size: cover;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card:nth-of-type(2) {
+    background: linear-gradient(#00356680), 
+                url("../img/Portfolio-Background-2.webp");
+    background-size: cover;
+
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card:nth-of-type(3) {
+    background: linear-gradient(#00356680), 
+                url("../img/Portfolio-Background-3.webp");
+    background-size: cover;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card:nth-of-type(1):hover,
+section#portfolio div.container div.portfolio__elements div.elements--card:nth-of-type(2):hover,
+section#portfolio div.container div.portfolio__elements div.elements--card:nth-of-type(3):hover {
+    background-position: center center;
+    background-size: 120% 120%;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card:hover {
+    border: 3px solid var(--color-300);
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card span {
+    color: var(--color-050);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card a {
+    background-color: var(--color-300);
+    color: var(--color-950);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 24px;
+    transition: .3s;
+}
+
+section#portfolio div.container div.portfolio__elements div.elements--card a:hover {
+    transform: scale(1.05);
+}
+
+/* Section - Contact */
+section#contact div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#contact div.container div.contact__elements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section#contact div.container div.contact__elements div.contact--infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+section#contact div.container div.contact__elements div.contact--infos span {
+    color: var(--color-300);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+section#contact div.container div.contact__elements div.contact--links {
+    display: flex;
+    justify-content: center;
+}
+
+section#contact div.container div.contact__elements div.contact--links a {
+    background-color: var(--color-300);
+    color: var(--color-950);
+    font-size: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    transition: .3s;
+}
+
+section#contact div.container div.contact__elements div.contact--links a:hover {
+    background-color: var(--color-950);
+    color: var(--color-050);
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-500);
+    padding: 20px 0;
+}
+
+footer div.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.container span.footer--copyright,
+footer div.container div.footer--icons {
+    color: var(--color-050);
+}
+
+footer div.container span.footer--copyright {
+    font-size: 14px;
+}
+
+footer div.container div.footer--icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+footer div.container div.footer--icons i {
+    font-size: 18px;
+}

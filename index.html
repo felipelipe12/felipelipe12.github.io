@@ -8,13 +8,11 @@
     <meta name="keywords" content="Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Felipe Almeida</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -26,11 +24,11 @@
             <a href="#about" aria-label="About Link">
                 <i class="fa-solid fa-user"></i>
             </a>
+            <a href="#skills" aria-label="Skills Link">
+                <i class="fa-solid fa-book"></i>
+            </a>
             <a href="#portfolio" aria-label="Portfolio Link">
                 <i class="fa-solid fa-folder-open"></i>
-            </a>
-            <a href="#experience" aria-label="Experience Link">
-                <i class="fa-solid fa-book"></i>
             </a>
             <a href="#contact" aria-label="Contact Link">
                 <i class="fa-solid fa-paper-plane"></i>
@@ -55,46 +53,119 @@
             <div class="container">
                 <h2>Sobre</h2>
                 <div class="about__elements">
-                    <div class="about__elements--profile">
-                        <img src="assets/img/Felipe-Almeida.webp" width="350" height="350" alt="Profile photo">
-                        <div class="elements__profile--icons">
-                            <a href="https://github.com/felipelipe12" aria-label="GitHub">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/felipe-melo-de-almeida/" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://codepen.io/felipelipe12" aria-label="CodePen">
-                                <i class="fa-brands fa-codepen"></i>
-                            </a>
-                        </div>
+                    <div class="elements--texts">
+                        <p>Sou Web Developer, com ênfase em Front-End. Desenvolvo interfaces web modernas e
+                            responsivas para diversos direcionamentos atendendo as expectativas e demandas das
+                            empresas no meio online. Estou sempre preparado para atuar em equipe e compartilhar
+                            conhecimento, visando atender metas e crescer coletivamente.
+                        </p>
+                        <p> Busco aprimorar minhas habilidades e conhecimentos, sempre me atualizando às
+                            tendências no meio tecnológico. Possuo confiança que minha contribuição seja
+                            significativa para o progresso e evolução de projetos e equipes.
+                        </p>
                     </div>
-                    <div class="about__elements--infos">
-                        <div class="elements__infos--texts">
-                            <p>Sou Web Developer, com ênfase em Front-End. Desenvolvo interfaces web modernas e
-                                responsivas para diversos direcionamentos atendendo as expectativas e demandas das
-                                empresas no meio online. Estou sempre preparado para atuar em equipe e compartilhar
-                                conhecimento, visando atender metas e crescer coletivamente.</p>
-                            <p> Busco aprimorar minhas habilidades e conhecimentos, sempre me atualizando às
-                                tendências no meio tecnológico. Possuo confiança que minha contribuição seja
-                                significativa para o progresso e evolução de projetos e equipes.</p>
+                    <div class="elements--socials">
+                        <a href="https://github.com/felipelipe12" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/felipe-melo-de-almeida/" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://codepen.io/felipelipe12" aria-label="CodePen">
+                            <i class="fa-brands fa-codepen"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Experiência</h2>
+                <div class="skills__elements">
+                    <input id="skills1" type="radio" name="skills" checked>
+                    <input id="skills2" type="radio" name="skills">
+                    <input id="skills3" type="radio" name="skills">
+                    <input id="skills4" type="radio" name="skills">
+                    <div class="elements__buttons">
+                        <label for="skills1">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <span>Front-end & UX/UI</span>
+                        </label>
+                        <label for="skills2">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>Back-end & APIs</span>
+                        </label>
+                        <label for="skills3">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <span>Gestão & Flows</span>
+                        </label>
+                        <label for="skills4">
+                            <i class="fa-solid fa-scroll"></i>
+                            <span>Infra & Deploys</span>
+                        </label>
+                    </div>
+                    <div class="elements__cards">
+                        <div class="elements__group--cards skills1">
+                            <div class="cards__card">
+                                <span>HTML</span>
+                                <span>HTML semântico, formulários avançados, multimídia e acessibilidade de alto nível.</span>
+                                <span>Metatags, animações, ARIA's</span>
+                            </div>
+                            <div class="cards__card">
+                                <span>CSS 3</span>
+                                <span>CSS moderno e responsivo, animações flúidas, design acessível e otimizado para performance.</span>
+                                <span>SASS, Bootstrap 5, Tailwind CSS, Materialize CSS, Bulma</span>
+                            </div>
+                            <div class="cards__card">
+                                <span>JavaScript</span>
+                                <span>Manipulação do DOM, padrões de projetos, async/await, boas práticas e clean code.</span>
+                                <span>Node.js, Express.js, React.js, Next.js, TypeScript</span>
+                            </div>
+                            <div class="cards__card">
+                                <span>CMSs</span>
+                                <span>Criação de sites, E-commerces, Blogs & Landing Pages responsivas e otimizadas.</span>
+                                <span>WordPress, Shopify, Webflow</span>
+                            </div>
                         </div>
-                        <div class="elements__infos--quantities">
-                            <div class="infos__quantities--card">
-                                <span>+8</span>
-                                <span>Anos de experiência</span>
+                        <div class="elements__group--cards skills2">
+                            <div class="cards__card">
+                                <span>API's</span>
+                                <span>API Rest com os métodos HTTP (GEET, POST, PUT e DELETE), criptografia, autenticação e boas práticas.</span>
+                                <span>Node.js, Express.js, JWT, CORS, Bcrypt, Middlewares, ES 6, Postman</span>
                             </div>
-                            <div class="infos__quantities--card">
-                                <span>+50</span>
-                                <span>Projetos finalizados</span>
+                            <div class="cards__card">
+                                <span>Banco de dados</span>
+                                <span>Integração com bancos, conceitos, roteamento dinâmico, NoSQL.</span>
+                                <span>MySQL, PostgreSQL, MongoDB, Firebase</span>
                             </div>
-                            <div class="infos__quantities--card">
-                                <span>+13</span>
-                                <span>Clientes satisfeitos</span>
+                        </div>
+                        <div class="elements__group--cards skills3">
+                            <div class="cards__card">
+                                <span>Git & Github</span>
+                                <span>Comandos básicos, resolução de conflitos, GitFlow.</span>
+                                <span>Git, Github, VS Code</span>
                             </div>
-                            <div class="infos__quantities--card">
-                                <span>+20</span>
-                                <span>Tecnologias e ferramentas</span>
+                            <div class="cards__card">
+                                <span>Kanban</span>
+                                <span>Princípios, métricas e fluxo de trabalho.</span>
+                                <span>Trello, Jira</span>
+                            </div>
+                        </div>
+                        <div class="elements__group--cards skills4">
+                            <div class="cards__card">
+                                <span>Hospedagem</span>
+                                <span>Segurança, manutenção, rotinas de backup, DNS e SSL.</span>
+                                <span>Hostinger, Hostigator</span>
+                            </div>
+                            <div class="cards__card">
+                                <span>Monitoramento</span>
+                                <span>Segurança, correção de pendências, práticas recomendadas e SEO.</span>
+                                <span>PageSpeed Insights, UptimeRobot</span>
+                            </div>
+                            <div class="cards__card">
+                                <span>Performance</span>
+                                <span>Otimização e reaproveitamento de código, boas práticas de desenvolvimento e políticas de cache.</span>
+                                <span>Cache, Clean code</span>
                             </div>
                         </div>
                     </div>
@@ -105,281 +176,17 @@
             <div class="container">
                 <h2>Portfolio</h2>
                 <div class="portfolio__elements">
-                    <div class="elements__card">
+                    <div class="elements--card">
                         <span>Jogos e Utilitários</span>
                         <a href="" aria-label="Jogos e Utilitários">Explorar</a>
                     </div>
-                    <div class="elements__card">
+                    <div class="elements--card">
                         <span>Landing Pages</span>
                         <a href="" aria-label="Landing Pages">Explorar</a>
                     </div>
-                    <div class="elements__card">
+                    <div class="elements--card">
                         <span>Sistemas</span>
                         <a href="" aria-label="Sistemas">Explorar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="experience">
-            <div class="container">
-                <h2>Experiência</h2>
-                <div class="experience__elements">
-                    <input id="experience1" type="radio" name="experience" checked>
-                    <input id="experience2" type="radio" name="experience">
-                    <input id="experience3" type="radio" name="experience">
-                    <input id="experience4" type="radio" name="experience">
-                    <div class="experience__elements--buttons">
-                        <label for="experience1">
-                            <i class="fa-solid fa-pen-ruler"></i>
-                            <span>Front-end</span>
-                        </label>
-                        <label for="experience2">
-                            <i class="fa-solid fa-gears"></i>
-                            <span>Back-end</span>
-                        </label>
-                        <label for="experience3">
-                            <i class="fa-solid fa-gauge-high"></i>
-                            <span>Gestão e performance</span>
-                        </label>
-                        <label for="experience4">
-                            <i class="fa-solid fa-scroll"></i>
-                            <span>Habilidades e conceitos</span>
-                        </label>
-                    </div>
-                    <div class="experience__elements--content">
-                        <div class="elements__content--cards experience1">
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>HTML</span>
-                                    <span>Linguagem | Avançado</span>
-                                    <span>Semântica (estrutura e hierarquia do documento), Acessibilidade (padrões e
-                                        atributos ARIA), Formulários (inputs avançados, autofill e autocomplete),
-                                        Performance e Otimização (Minificação de código e lazy loading), SEO (metatags)
-                                        e Boas práticas (atributos e código limpo).</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                        <img src="assets/img/Experience-Bradesco.webp" height="50" width="50"
-                                            alt="Bradesco Logo">
-                                        <img src="assets/img/Experience-Udemy.webp" height="50" width="50"
-                                            alt="Udemy Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>CSS</span>
-                                    <span>Linguagem | Avançado</span>
-                                    <span>Sintaxe e estrutura (propriedades e valores), Seletores (atributos,
-                                        pseudo-classes e pseudo-elementos), Variáveis, Layouts Flexíveis (flexbox & grid
-                                        layouts), Responsividade (media queries), Animações e transições (keyframes),
-                                        Acessibilidade (:focus, :active, :disabled, e :focus-visible), Performance e
-                                        Otimização (minificação) e Pré-processadores e Frameworks (SASS, Tailwind CSS,
-                                        Materialize CSS, Bootstrap 5, Chakra UI e Bulma).</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                        <img src="assets/img/Experience-Bradesco.webp" height="50" width="50"
-                                            alt="Bradesco Logo">
-                                        <img src="assets/img/Experience-Udemy.webp" height="50" width="50"
-                                            alt="Udemy Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>JavaScript</span>
-                                    <span>Linguagem | Intermediário</span>
-                                    <span>...</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                        <img src="assets/img/Experience-Bradesco.webp" height="50" width="50"
-                                            alt="Bradesco Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>SASS</span>
-                                    <span>Pré-processador | Intermediário</span>
-                                    <span>Sintaxe (SCSS e SASS), Nesting, Variáveis, Mixins (Componentes),
-                                        Funções (manipulação de cores e tamanhos), Boas práticas e Performance e
-                                        Otimização (minificação e lazy loading).</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>React.js</span>
-                                    <span>Biblioteca | Intermediário</span>
-                                    <span>...</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>Next.js</span>
-                                    <span>Framework | Intermediário</span>
-                                    <span>...</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elements__content--cards experience2">
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>Node.js</span>
-                                    <span>Ferramenta | Intermediário</span>
-                                    <span>...</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>Express.js</span>
-                                    <span>Ferramenta | Intermediário</span>
-                                    <span>...</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>API REST</span>
-                                    <span>Conceito | Intermediário</span>
-                                    <span>Métodos HTTP e Semântica (GET, POST, PUT, PATCH, DELETE), Códigos de status
-                                        (200, 201, 204, 400, 401, 403, 404, 409, 500, etc.), Endpoints (didática nos
-                                        endpoints), Boas práticas (respostas e mensagens de erro padronizadas),
-                                        Autenticação e Autorização (JWT e controle de acesso) e Validações.</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>JWT</span>
-                                    <span>Conceito | Básico</span>
-                                    <span>Renovação, Expiração e Armazenamento de tokens (local e cookies), Bibliotecas
-                                        (jsonwebtoken) e Monitoramento (login, tempo de acesso e endpoints
-                                        disponíveis).</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elements__content--cards experience3">
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>Git & GitHub</span>
-                                    <span>Ferramenta | Intermediário</span>
-                                    <span>Comandos e conceitos (add, commit, push, pull, clone, checkout e status),
-                                        Branch e Merge, Markdown e Documentação (README.md, badges).</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>Metodologias ágeis</span>
-                                    <span>Conteito | Intermediário</span>
-                                    <span>Kanban (princípios e valores, design e gestão, fluxo e melhorias
-                                        contínuas), Scrum (sprints, reviews e dailys) e Lean (eliminação de
-                                        desperdícios, construção de qualidade, entregas ágeis e MVPs).</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- acessibiidade, seo, otimização -->
-                        </div>
-                        <div class="elements__content--cards experience4">
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>UI/UX</span>
-                                    <span>Conceito | Intermediário</span>
-                                    <span>...</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content__cards--tech">
-                                <div class="cards__tech--description">
-                                    <span>Figma</span>
-                                    <span>Ferramenta | Intermediário</span>
-                                    <span>...</span>
-                                </div>
-                                <div class="cards__tech--links">
-                                    <span>Certificações:</span>
-                                    <div class="tech__links">
-                                        <img src="assets/img/Experience-Alura.webp" height="50" width="50"
-                                            alt="Alura Logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -388,12 +195,12 @@
             <div class="container">
                 <h2>Contato</h2>
                 <div class="contact__elements">
-                    <div class="contact__elements--infos">
+                    <div class="contact--infos">
                         <span>Interessado? Entre em contato!</span>
                         <p>Estou aberto a projetos dentro de minha linha de conhecimento e até mesmo a desafios com
                             novas tecnologias.</p>
                     </div>
-                    <div class="contact__elements--links">
+                    <div class="contact--links">
                         <a href="mailto:felipe.lipe12.fl@outlook.com" aria-label="E-mail">
                             <i class="fa-solid fa-envelope"></i>
                         </a>

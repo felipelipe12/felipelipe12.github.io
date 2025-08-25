@@ -88,7 +88,7 @@ header nav {
 header nav a {
     background-color: var(--color-300);
     color: var(--color-950);
-    font-size: 24px;
+    font-size: 22px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -199,13 +199,13 @@ section#about div.container div.about__elements div.elements--socials {
 section#about div.container div.about__elements div.elements--socials a {
     background-color: var(--color-300);
     color: var(--color-950);
-    font-size: 24px;
+    font-size: 22px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 54px;
-    width: 54px;
+    height: 50px;
+    width: 50px;
     transition: .3s;
 }
 
@@ -244,7 +244,7 @@ section#skills div.container div.skills__elements div.elements__buttons label {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
     border-radius: 10px;
     padding: 20px;
@@ -427,7 +427,7 @@ section#contact div.container div.contact__elements div.contact--links {
 section#contact div.container div.contact__elements div.contact--links a {
     background-color: var(--color-300);
     color: var(--color-950);
-    font-size: 28px;
+    font-size: 22px;
     border-radius: 50%;
     display: flex;
     justify-content: center;

@@ -37,7 +37,7 @@ section:nth-child(odd) {
     background-color: var(--color-700);
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: var(--color-050);
 }
 
@@ -49,10 +49,6 @@ h2 {
     font-size: 48px;
     font-weight: 900;
     text-align: center;
-}
-
-h3 {
-    font-size: 24px;
 }
 
 a {

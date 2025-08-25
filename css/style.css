@@ -451,7 +451,7 @@ footer div.container {
 }
 
 footer div.container span.footer--copyright,
-footer div.container div.footer--icons {
+footer div.container div.footer__icons {
     color: var(--color-050);
 }
 

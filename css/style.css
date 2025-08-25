@@ -21,12 +21,12 @@ body {
     user-select: none;
 }
 
-section:first-child {
-    height: 100dvh;
+section {
+    padding: 80px 0;
 }
 
-section:not(section:first-child) {
-    padding: 80px 0;
+section:first-child {
+    height: 100dvh;
 }
 
 section:nth-child(even) {

@@ -20,7 +20,7 @@
     header {
         top: initial;
         right: initial;
-        bottom: 25px;
+        bottom: 25dvh;
         left: 50%;
         transform: translateX(-50%);
     }

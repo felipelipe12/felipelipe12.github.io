@@ -471,8 +471,5 @@ footer div.container div.footer__icons {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-footer div.container div.footer__icons i {
     font-size: 18px;
 }

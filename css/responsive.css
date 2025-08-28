@@ -1,3 +1,4 @@
+/* Responsive - Mobile */
 @media (max-width: 480px) {
     body {
         background-color: red;
@@ -11,7 +12,8 @@
         max-width: 320px;
     }
 }
-  
+
+/* Responsive - Tablet */
 @media (min-width: 481px) and (max-width: 768px) {
     body {
         background-color: blue;
@@ -25,7 +27,8 @@
         max-width: 600px;
     }
 }
-  
+
+/* Responsive - Laptop */
 @media (min-width: 769px) and (max-width: 1024px) {      
     .container {
         max-width: 960px;
@@ -55,7 +58,11 @@
 }
 
 /* Responsive - Default */
-  
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* ... */
+}
+
+/* Responsive - Widescreens */
 @media (min-width: 1441px) {
     body {
         background-color: yellow;

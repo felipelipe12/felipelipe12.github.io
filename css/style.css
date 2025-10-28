@@ -228,7 +228,7 @@ section#skills div.container {
 
 section#skills div.container div.skills__elements {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
 }
 
@@ -238,7 +238,8 @@ section#skills div.container div.skills__elements input[type="radio"] {
 
 section#skills div.container div.skills__elements div.elements__buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 25%;
     gap: 30px;
 }
 
@@ -262,11 +263,11 @@ section#skills div.container div.skills__elements div.elements__buttons label:ho
 }
 
 section#skills div.container div.skills__elements div.elements__buttons label i {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 section#skills div.container div.skills__elements div.elements__buttons label span {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -274,6 +275,7 @@ section#skills div.container div.skills__elements div.elements__cards {
     background-color: var(--color-500);
     border-radius: 15px;
     padding: 30px;
+    width: 75%;
 }
 
 section#skills div.container div.skills__elements div.elements__cards div.elements__group--cards {

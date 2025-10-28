@@ -20,7 +20,7 @@
     header {
         top: initial;
         right: initial;
-        bottom: 25dvh;
+        bottom: 25dvw;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -36,14 +36,10 @@
 
     /* Section - Hero */
     section#hero div.container {
-        display: flex;
-        flex-direction: column;
         gap: 50px;
     }
 
     section#hero div.container div.hero--titles {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
@@ -58,8 +54,18 @@
     }
 
     section#hero div.container div.hero--buttons {
-        display: flex;
         justify-content: center;
+        gap: 20px;
+    }
+
+    section#hero div.container div.hero--buttons a:nth-of-type(1),
+    section#hero div.container div.hero--buttons a:nth-of-type(2) {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    /* Section - About */
+    section#about div.container {
         gap: 30px;
     }
 }

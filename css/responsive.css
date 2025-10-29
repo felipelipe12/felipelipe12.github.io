@@ -1,7 +1,7 @@
 /* Responsive - Mobile */
 @media (max-width: 480px) {
     section {
-        padding: 50px 0;
+        padding: 50px 20px;
     }
 
     h1 {
@@ -10,6 +10,10 @@
 
     h2 {
         font-size: 40px;
+    }
+
+    p {
+        font-size: 15px;
     }
         
     .container {
@@ -67,6 +71,57 @@
     /* Section - About */
     section#about div.container {
         gap: 30px;
+    }
+
+    section#about div.container div.about__elements {
+        gap: 20px;
+    }
+
+    section#about div.container div.about__elements div.elements--socials {
+        gap: 20px;
+    }
+
+    section#about div.container div.about__elements div.elements--socials a {
+        font-size: 20px;
+        height: 44px;
+        width: 44px;
+    }
+
+    /* Section - Skills */
+    /* section#skills div.container {
+        gap: 30px;
+    } */
+
+
+/*------------ */
+    section#skills,
+    section#portfolio {
+        display: none;
+    }
+
+    /* Section - Contact */
+    section#contact div.container {
+        gap: 30px;
+    }
+
+    section#contact div.container div.contact__elements {
+        gap: 20px;
+    }
+
+    section#contact div.container div.contact__elements div.contact--infos {
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    section#contact div.container div.contact__elements div.contact--infos span {
+        font-size: 18px;
+    }
+
+    section#contact div.container div.contact__elements div.contact--links a {
+        font-size: 20px;
+        height: 44px;
+        width: 44px;
     }
 }
 

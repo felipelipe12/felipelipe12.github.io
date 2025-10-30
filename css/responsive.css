@@ -88,15 +88,35 @@
     }
 
     /* Section - Skills */
-    /* section#skills div.container {
-        gap: 30px;
-    } */
-
-
-/*------------ */
-    section#skills,
-    section#portfolio {
+    section#skills {
         display: none;
+    }
+
+    section#skills div.container {
+        gap: 30px;
+    }    
+
+    /* Section - Portfolio */
+    section#portfolio div.container {
+        gap: 30px;
+    }
+
+    section#portfolio div.container div.portfolio__elements {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    section#portfolio div.container div.portfolio__elements div.elements--card {
+        gap: 20px;
+    }
+
+    section#portfolio div.container div.portfolio__elements div.elements--card span {
+        font-size: 18px;
+    }
+
+    section#portfolio div.container div.portfolio__elements div.elements--card a {
+        font-size: 12px;
+        padding: 8px 20px;
     }
 
     /* Section - Contact */

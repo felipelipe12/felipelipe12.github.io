@@ -24,7 +24,7 @@
     header {
         top: initial;
         right: initial;
-        bottom: 15dvh;
+        bottom: 100px;
         left: 50%;
         transform: translateX(-50%);
     }

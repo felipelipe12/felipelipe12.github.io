@@ -24,7 +24,7 @@
     header {
         top: initial;
         right: initial;
-        bottom: 100px;
+        bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -88,13 +88,39 @@
     }
 
     /* Section - Skills */
-    section#skills {
+    /* Eliminate */
+    /* section#skills {
         display: none;
-    }
+    } */
 
     section#skills div.container {
         gap: 30px;
-    }    
+    }
+
+    section#skills div.container div.skills__elements {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section#skills div.container div.skills__elements div.elements__buttons {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+
+    section#skills div.container div.skills__elements div.elements__cards {
+        padding: 20px;
+        width: 100%;
+    }
+
+    section#skills div.container div.skills__elements input#skills1:checked ~ div.elements__cards div.elements__group--cards.skills1, 
+    section#skills div.container div.skills__elements input#skills2:checked ~ div.elements__cards div.elements__group--cards.skills2, 
+    section#skills div.container div.skills__elements input#skills3:checked ~ div.elements__cards div.elements__group--cards.skills3, 
+    section#skills div.container div.skills__elements input#skills4:checked ~ div.elements__cards div.elements__group--cards.skills4 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
 
     /* Section - Portfolio */
     section#portfolio div.container {
@@ -146,7 +172,7 @@
 
     /* Footer */
     footer{
-        padding: 100px 0 20px;
+        padding: 20px 0 100px;
     }
 
     footer div.container {

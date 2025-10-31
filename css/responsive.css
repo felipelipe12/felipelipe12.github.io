@@ -187,18 +187,18 @@
 
     footer div.container {
         flex-direction: column;
-        gap: 20px;
         align-items: center;
+        gap: 20px;
     }
 }
 
 /* Responsive - Tablet */
 @media (min-width: 481px) and (max-width: 768px) {
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
     
-    header, section, footer {
+    header, main, footer {
         display: none !important;
     }
 
@@ -212,27 +212,28 @@
     .container {
         max-width: 960px;
     }
-
+ 
     header {
-        top: inherit;
-        bottom: 10px !important;
+        top: initial;
+        right: initial;
+        bottom: 25px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
 
     header nav {
-        display: flex;
         flex-direction: row;
-        gap: 50px;
+        gap: 30px;
     }
 
     footer {
-        padding: 100px 0 30px;
+        padding: 30px 0 100px;
     }
 
     footer div.container {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
 }
 
